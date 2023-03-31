@@ -13,6 +13,7 @@ public class Person {
     /**
      * The birth date of the person
      */
+    
     public String birthDate;
     public Person withBirthDate(String birthDate) {
         this.birthDate = birthDate;
@@ -22,6 +23,7 @@ public class Person {
     /**
      * The birth year of the person
      */
+    
     public Double birthYear;
     public Person withBirthYear(Double birthYear) {
         this.birthYear = birthYear;
@@ -31,6 +33,7 @@ public class Person {
     /**
      * The certifications of the person
      */
+    
     public String[] certifications;
     public Person withCertifications(String[] certifications) {
         this.certifications = certifications;
@@ -40,6 +43,7 @@ public class Person {
     /**
      * The educational history of the person
      */
+    
     public String[] education;
     public Person withEducation(String[] education) {
         this.education = education;
@@ -49,6 +53,7 @@ public class Person {
     /**
      * The personal and work emails of the person
      */
+    
     public String[] emails;
     public Person withEmails(String[] emails) {
         this.emails = emails;
@@ -58,6 +63,7 @@ public class Person {
     /**
      * The works experience of the person
      */
+    
     public String[] experience;
     public Person withExperience(String[] experience) {
         this.experience = experience;
@@ -67,6 +73,7 @@ public class Person {
     /**
      * The Facebook ID of the person
      */
+    
     public String facebookId;
     public Person withFacebookId(String facebookId) {
         this.facebookId = facebookId;
@@ -76,6 +83,7 @@ public class Person {
     /**
      * The Facebook URL of the person
      */
+    
     public String facebookUrl;
     public Person withFacebookUrl(String facebookUrl) {
         this.facebookUrl = facebookUrl;
@@ -85,6 +93,7 @@ public class Person {
     /**
      * The Facebook username of the person
      */
+    
     public String facebookUsername;
     public Person withFacebookUsername(String facebookUsername) {
         this.facebookUsername = facebookUsername;
@@ -94,6 +103,7 @@ public class Person {
     /**
      * The first name of the person
      */
+    
     public String firstName;
     public Person withFirstName(String firstName) {
         this.firstName = firstName;
@@ -103,6 +113,7 @@ public class Person {
     /**
      * The full name of the person
      */
+    
     public String fullName;
     public Person withFullName(String fullName) {
         this.fullName = fullName;
@@ -112,6 +123,7 @@ public class Person {
     /**
      * The gender of the person
      */
+    
     public String gender;
     public Person withGender(String gender) {
         this.gender = gender;
@@ -121,6 +133,7 @@ public class Person {
     /**
      * The Github URL of the person
      */
+    
     public String githubUrl;
     public Person withGithubUrl(String githubUrl) {
         this.githubUrl = githubUrl;
@@ -130,6 +143,7 @@ public class Person {
     /**
      * The Github username of the person
      */
+    
     public String githubUsername;
     public Person withGithubUsername(String githubUsername) {
         this.githubUsername = githubUsername;
@@ -139,6 +153,7 @@ public class Person {
     /**
      * The key for looking up the company
      */
+    
     public Double id;
     public Person withId(Double id) {
         this.id = id;
@@ -148,6 +163,7 @@ public class Person {
     /**
      * The industry of the person
      */
+    
     public String industry;
     public Person withIndustry(String industry) {
         this.industry = industry;
@@ -157,6 +173,7 @@ public class Person {
     /**
      * The inferred salary band for the person
      */
+    
     public String inferredSalary;
     public Person withInferredSalary(String inferredSalary) {
         this.inferredSalary = inferredSalary;
@@ -166,6 +183,7 @@ public class Person {
     /**
      * The inferred years of experience for the person
      */
+    
     public Double inferredYearsExperience;
     public Person withInferredYearsExperience(Double inferredYearsExperience) {
         this.inferredYearsExperience = inferredYearsExperience;
@@ -175,6 +193,7 @@ public class Person {
     /**
      * The interests of the person
      */
+    
     public String[] interests;
     public Person withInterests(String[] interests) {
         this.interests = interests;
@@ -184,6 +203,7 @@ public class Person {
     /**
      * The current job company Facebook URL
      */
+    
     public String jobCompanyFacebookUrl;
     public Person withJobCompanyFacebookUrl(String jobCompanyFacebookUrl) {
         this.jobCompanyFacebookUrl = jobCompanyFacebookUrl;
@@ -193,6 +213,7 @@ public class Person {
     /**
      * The current job company founded year
      */
+    
     public String jobCompanyFounded;
     public Person withJobCompanyFounded(String jobCompanyFounded) {
         this.jobCompanyFounded = jobCompanyFounded;
@@ -202,6 +223,7 @@ public class Person {
     /**
      * The current job company ID
      */
+    
     public String jobCompanyId;
     public Person withJobCompanyId(String jobCompanyId) {
         this.jobCompanyId = jobCompanyId;
@@ -211,6 +233,7 @@ public class Person {
     /**
      * The current job company industry
      */
+    
     public String jobCompanyIndustry;
     public Person withJobCompanyIndustry(String jobCompanyIndustry) {
         this.jobCompanyIndustry = jobCompanyIndustry;
@@ -220,6 +243,7 @@ public class Person {
     /**
      * The current job company id on LinkedIn
      */
+    
     public String jobCompanyLinkedinId;
     public Person withJobCompanyLinkedinId(String jobCompanyLinkedinId) {
         this.jobCompanyLinkedinId = jobCompanyLinkedinId;
@@ -229,6 +253,7 @@ public class Person {
     /**
      * The current job company LinkedIn URL
      */
+    
     public String jobCompanyLinkedinUrl;
     public Person withJobCompanyLinkedinUrl(String jobCompanyLinkedinUrl) {
         this.jobCompanyLinkedinUrl = jobCompanyLinkedinUrl;
@@ -238,6 +263,7 @@ public class Person {
     /**
      * The current job company location street adress second line
      */
+    
     public String jobCompanyLocationAddressLine2;
     public Person withJobCompanyLocationAddressLine2(String jobCompanyLocationAddressLine2) {
         this.jobCompanyLocationAddressLine2 = jobCompanyLocationAddressLine2;
@@ -247,6 +273,7 @@ public class Person {
     /**
      * The current job company location continent
      */
+    
     public String jobCompanyLocationContinent;
     public Person withJobCompanyLocationContinent(String jobCompanyLocationContinent) {
         this.jobCompanyLocationContinent = jobCompanyLocationContinent;
@@ -256,6 +283,7 @@ public class Person {
     /**
      * The current job company location country
      */
+    
     public String jobCompanyLocationCountry;
     public Person withJobCompanyLocationCountry(String jobCompanyLocationCountry) {
         this.jobCompanyLocationCountry = jobCompanyLocationCountry;
@@ -265,6 +293,7 @@ public class Person {
     /**
      * The current job company location geo coordinates
      */
+    
     public String jobCompanyLocationGeo;
     public Person withJobCompanyLocationGeo(String jobCompanyLocationGeo) {
         this.jobCompanyLocationGeo = jobCompanyLocationGeo;
@@ -274,6 +303,7 @@ public class Person {
     /**
      * The current job company location city
      */
+    
     public String jobCompanyLocationLocality;
     public Person withJobCompanyLocationLocality(String jobCompanyLocationLocality) {
         this.jobCompanyLocationLocality = jobCompanyLocationLocality;
@@ -283,6 +313,7 @@ public class Person {
     /**
      * The current job company location metro
      */
+    
     public String jobCompanyLocationMetro;
     public Person withJobCompanyLocationMetro(String jobCompanyLocationMetro) {
         this.jobCompanyLocationMetro = jobCompanyLocationMetro;
@@ -292,6 +323,7 @@ public class Person {
     /**
      * The current job company location name
      */
+    
     public String jobCompanyLocationName;
     public Person withJobCompanyLocationName(String jobCompanyLocationName) {
         this.jobCompanyLocationName = jobCompanyLocationName;
@@ -301,6 +333,7 @@ public class Person {
     /**
      * The current job company location postal code
      */
+    
     public String jobCompanyLocationPostalCode;
     public Person withJobCompanyLocationPostalCode(String jobCompanyLocationPostalCode) {
         this.jobCompanyLocationPostalCode = jobCompanyLocationPostalCode;
@@ -310,6 +343,7 @@ public class Person {
     /**
      * The current job company location region
      */
+    
     public String jobCompanyLocationRegion;
     public Person withJobCompanyLocationRegion(String jobCompanyLocationRegion) {
         this.jobCompanyLocationRegion = jobCompanyLocationRegion;
@@ -319,6 +353,7 @@ public class Person {
     /**
      * The current job company location street address
      */
+    
     public String jobCompanyLocationStreetAddress;
     public Person withJobCompanyLocationStreetAddress(String jobCompanyLocationStreetAddress) {
         this.jobCompanyLocationStreetAddress = jobCompanyLocationStreetAddress;
@@ -328,6 +363,7 @@ public class Person {
     /**
      * The current job company name
      */
+    
     public String jobCompanyName;
     public Person withJobCompanyName(String jobCompanyName) {
         this.jobCompanyName = jobCompanyName;
@@ -337,6 +373,7 @@ public class Person {
     /**
      * The current job company size
      */
+    
     public String jobCompanySize;
     public Person withJobCompanySize(String jobCompanySize) {
         this.jobCompanySize = jobCompanySize;
@@ -346,6 +383,7 @@ public class Person {
     /**
      * The current job company Twitter URL
      */
+    
     public String jobCompanyTwitterUrl;
     public Person withJobCompanyTwitterUrl(String jobCompanyTwitterUrl) {
         this.jobCompanyTwitterUrl = jobCompanyTwitterUrl;
@@ -355,6 +393,7 @@ public class Person {
     /**
      * The current job company website
      */
+    
     public String jobCompanyWebsite;
     public Person withJobCompanyWebsite(String jobCompanyWebsite) {
         this.jobCompanyWebsite = jobCompanyWebsite;
@@ -364,6 +403,7 @@ public class Person {
     /**
      * The last update date for the job
      */
+    
     public String jobLastUpdated;
     public Person withJobLastUpdated(String jobLastUpdated) {
         this.jobLastUpdated = jobLastUpdated;
@@ -373,6 +413,7 @@ public class Person {
     /**
      * The start date for the current job
      */
+    
     public String jobStartDate;
     public Person withJobStartDate(String jobStartDate) {
         this.jobStartDate = jobStartDate;
@@ -382,6 +423,7 @@ public class Person {
     /**
      * The summary for the current job
      */
+    
     public String jobSummary;
     public Person withJobSummary(String jobSummary) {
         this.jobSummary = jobSummary;
@@ -391,6 +433,7 @@ public class Person {
     /**
      * The current job title of the person
      */
+    
     public String jobTitle;
     public Person withJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
@@ -400,6 +443,7 @@ public class Person {
     /**
      * The current job title levels
      */
+    
     public String[] jobTitleLevels;
     public Person withJobTitleLevels(String[] jobTitleLevels) {
         this.jobTitleLevels = jobTitleLevels;
@@ -409,6 +453,7 @@ public class Person {
     /**
      * The current job title role of the person
      */
+    
     public String jobTitleRole;
     public Person withJobTitleRole(String jobTitleRole) {
         this.jobTitleRole = jobTitleRole;
@@ -418,6 +463,7 @@ public class Person {
     /**
      * The current job title sub-role of the person
      */
+    
     public String jobTitleSubRole;
     public Person withJobTitleSubRole(String jobTitleSubRole) {
         this.jobTitleSubRole = jobTitleSubRole;
@@ -427,6 +473,7 @@ public class Person {
     /**
      * The languages of the person
      */
+    
     public String[] languages;
     public Person withLanguages(String[] languages) {
         this.languages = languages;
@@ -436,6 +483,7 @@ public class Person {
     /**
      * The last name of the person
      */
+    
     public String lastName;
     public Person withLastName(String lastName) {
         this.lastName = lastName;
@@ -445,6 +493,7 @@ public class Person {
     /**
      * The number of LinkedIn connections for the person
      */
+    
     public Double linkedinConnections;
     public Person withLinkedinConnections(Double linkedinConnections) {
         this.linkedinConnections = linkedinConnections;
@@ -454,6 +503,7 @@ public class Person {
     /**
      * The linkedIn ID of the person
      */
+    
     public Double linkedinId;
     public Person withLinkedinId(Double linkedinId) {
         this.linkedinId = linkedinId;
@@ -463,6 +513,7 @@ public class Person {
     /**
      * The linkedIn URL of the person
      */
+    
     public String linkedinUrl;
     public Person withLinkedinUrl(String linkedinUrl) {
         this.linkedinUrl = linkedinUrl;
@@ -472,6 +523,7 @@ public class Person {
     /**
      * The linkedIn user name of the person
      */
+    
     public String linkedinUsername;
     public Person withLinkedinUsername(String linkedinUsername) {
         this.linkedinUsername = linkedinUsername;
@@ -481,6 +533,7 @@ public class Person {
     /**
      * The current location street address second line for the person
      */
+    
     public String locationAddressLineTwo;
     public Person withLocationAddressLineTwo(String locationAddressLineTwo) {
         this.locationAddressLineTwo = locationAddressLineTwo;
@@ -490,6 +543,7 @@ public class Person {
     /**
      * The current location continent for the person
      */
+    
     public String locationContinent;
     public Person withLocationContinent(String locationContinent) {
         this.locationContinent = locationContinent;
@@ -499,6 +553,7 @@ public class Person {
     /**
      * The current location country for the person
      */
+    
     public String locationCountry;
     public Person withLocationCountry(String locationCountry) {
         this.locationCountry = locationCountry;
@@ -508,6 +563,7 @@ public class Person {
     /**
      * The current location geo coordinates for the person
      */
+    
     public String[] locationGeo;
     public Person withLocationGeo(String[] locationGeo) {
         this.locationGeo = locationGeo;
@@ -517,6 +573,7 @@ public class Person {
     /**
      * The current location last updated date for the person
      */
+    
     public String locationLastUpdated;
     public Person withLocationLastUpdated(String locationLastUpdated) {
         this.locationLastUpdated = locationLastUpdated;
@@ -526,6 +583,7 @@ public class Person {
     /**
      * The current location city for the person
      */
+    
     public String locationLocality;
     public Person withLocationLocality(String locationLocality) {
         this.locationLocality = locationLocality;
@@ -535,6 +593,7 @@ public class Person {
     /**
      * The current location metro for the person
      */
+    
     public String locationMetro;
     public Person withLocationMetro(String locationMetro) {
         this.locationMetro = locationMetro;
@@ -544,6 +603,7 @@ public class Person {
     /**
      * The current location name for the person
      */
+    
     public String locationName;
     public Person withLocationName(String locationName) {
         this.locationName = locationName;
@@ -553,6 +613,7 @@ public class Person {
     /**
      * The current location postal code for the person
      */
+    
     public String locationPostalCode;
     public Person withLocationPostalCode(String locationPostalCode) {
         this.locationPostalCode = locationPostalCode;
@@ -562,6 +623,7 @@ public class Person {
     /**
      * The current location region for the person
      */
+    
     public String locationRegion;
     public Person withLocationRegion(String locationRegion) {
         this.locationRegion = locationRegion;
@@ -571,6 +633,7 @@ public class Person {
     /**
      * The current location street address for the person
      */
+    
     public String locationStreetAddress;
     public Person withLocationStreetAddress(String locationStreetAddress) {
         this.locationStreetAddress = locationStreetAddress;
@@ -580,6 +643,7 @@ public class Person {
     /**
      * The middle initial of the person
      */
+    
     public String middleInitial;
     public Person withMiddleInitial(String middleInitial) {
         this.middleInitial = middleInitial;
@@ -589,6 +653,7 @@ public class Person {
     /**
      * The middle name of the person
      */
+    
     public String middleName;
     public Person withMiddleName(String middleName) {
         this.middleName = middleName;
@@ -598,6 +663,7 @@ public class Person {
     /**
      * The mobile phone of the person
      */
+    
     public String mobilePhone;
     public Person withMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
@@ -607,6 +673,7 @@ public class Person {
     /**
      * The phone numbers of the person
      */
+    
     public String[] phoneNumbers;
     public Person withPhoneNumbers(String[] phoneNumbers) {
         this.phoneNumbers = phoneNumbers;
@@ -616,6 +683,7 @@ public class Person {
     /**
      * The social profiles of the person
      */
+    
     public String[] profiles;
     public Person withProfiles(String[] profiles) {
         this.profiles = profiles;
@@ -625,6 +693,7 @@ public class Person {
     /**
      * The skills of the person
      */
+    
     public String[] skills;
     public Person withSkills(String[] skills) {
         this.skills = skills;
@@ -634,6 +703,7 @@ public class Person {
     /**
      * The street addresses of the person
      */
+    
     public String[] streetAddresses;
     public Person withStreetAddresses(String[] streetAddresses) {
         this.streetAddresses = streetAddresses;
@@ -643,6 +713,7 @@ public class Person {
     /**
      * The self-summary of the person's work experience
      */
+    
     public String summary;
     public Person withSummary(String summary) {
         this.summary = summary;
@@ -652,6 +723,7 @@ public class Person {
     /**
      * The Twitter URL of the person
      */
+    
     public String twitterUrl;
     public Person withTwitterUrl(String twitterUrl) {
         this.twitterUrl = twitterUrl;
@@ -661,6 +733,7 @@ public class Person {
     /**
      * The Twitter username of the person
      */
+    
     public String twitterUsername;
     public Person withTwitterUsername(String twitterUsername) {
         this.twitterUsername = twitterUsername;
@@ -670,6 +743,7 @@ public class Person {
     /**
      * The work email of the person
      */
+    
     public String workEmail;
     public Person withWorkEmail(String workEmail) {
         this.workEmail = workEmail;

@@ -4,12 +4,46 @@
 
 package structure.Structure.models.operations;
 
-
+import structure.Structure.utils.SpeakeasyMetadata;
 
 public class EnrichCompanyRequest {
-    public EnrichCompanyQueryParams queryParams;
-    public EnrichCompanyRequest withQueryParams(EnrichCompanyQueryParams queryParams) {
-        this.queryParams = queryParams;
+    /**
+     * Country code of the company
+     */
+    @SpeakeasyMetadata("queryParam:style=form,explode=true,name=country_code")
+    public String countryCode;
+    public EnrichCompanyRequest withCountryCode(String countryCode) {
+        this.countryCode = countryCode;
+        return this;
+    }
+    
+    /**
+     * The headquarters of the company
+     */
+    @SpeakeasyMetadata("queryParam:style=form,explode=true,name=headquarters")
+    public String headquarters;
+    public EnrichCompanyRequest withHeadquarters(String headquarters) {
+        this.headquarters = headquarters;
+        return this;
+    }
+    
+    /**
+     * ID of the company
+     */
+    @SpeakeasyMetadata("queryParam:style=form,explode=true,name=id")
+    public String id;
+    public EnrichCompanyRequest withId(String id) {
+        this.id = id;
+        return this;
+    }
+    
+    /**
+     * Game of the company
+     */
+    @SpeakeasyMetadata("queryParam:style=form,explode=true,name=name")
+    public String name;
+    public EnrichCompanyRequest withName(String name) {
+        this.name = name;
         return this;
     }
     

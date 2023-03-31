@@ -36,13 +36,13 @@ public class Companies {
      */
     public structure.Structure.models.operations.CompanyEmployeesResponse companyEmployees(structure.Structure.models.operations.CompanyEmployeesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
-        String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.CompanyEmployeesPathParams.class, baseUrl, "/companies/{id}/employees", request.pathParams, null);
+        String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.CompanyEmployeesRequest.class, baseUrl, "/companies/{id}/employees", request, null);
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
         
-        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.CompanyEmployeesQueryParams.class, request.queryParams, null);
+        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.CompanyEmployeesRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
                 req.addQueryParam(queryParam);
@@ -82,13 +82,13 @@ public class Companies {
      */
     public structure.Structure.models.operations.CompanyJobsResponse companyJobs(structure.Structure.models.operations.CompanyJobsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
-        String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.CompanyJobsPathParams.class, baseUrl, "/companies/{id}/jobs", request.pathParams, null);
+        String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.CompanyJobsRequest.class, baseUrl, "/companies/{id}/jobs", request, null);
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
         
-        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.CompanyJobsQueryParams.class, request.queryParams, null);
+        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.CompanyJobsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
                 req.addQueryParam(queryParam);
@@ -134,7 +134,7 @@ public class Companies {
         req.setMethod("GET");
         req.setURL(url);
         
-        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.EnrichCompanyQueryParams.class, request.queryParams, null);
+        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.EnrichCompanyRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
                 req.addQueryParam(queryParam);
@@ -172,7 +172,7 @@ public class Companies {
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public structure.Structure.models.operations.SearchCompaniesResponse searchCompanies(structure.Structure.models.operations.SearchCompaniesRequest request) throws Exception {
+    public structure.Structure.models.operations.SearchCompaniesResponse searchCompanies(structure.Structure.models.operations.SearchCompaniesApplicationJSON request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/companies/search");
         

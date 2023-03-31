@@ -7,11 +7,13 @@ package structure.Structure.models.operations;
 import java.net.http.HttpResponse;
 
 public class AuthsResponse {
+    
     public byte[] body;
     public AuthsResponse withBody(byte[] body) {
         this.body = body;
         return this;
     }
+    
     
     public String contentType;
     public AuthsResponse withContentType(String contentType) {
@@ -19,11 +21,13 @@ public class AuthsResponse {
         return this;
     }
     
+    
     public Integer statusCode;
     public AuthsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
     }
+    
     
     public HttpResponse<byte[]> rawResponse;
     public AuthsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {

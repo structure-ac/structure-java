@@ -13,6 +13,7 @@ public class Company {
     /**
      * The company's description
      */
+    
     public String about;
     public Company withAbout(String about) {
         this.about = about;
@@ -22,6 +23,7 @@ public class Company {
     /**
      * Affiliated companies to the company
      */
+    
     public String[] affiliated;
     public Company withAffiliated(String[] affiliated) {
         this.affiliated = affiliated;
@@ -31,6 +33,7 @@ public class Company {
     /**
      * The size of the company
      */
+    
     public String companySize;
     public Company withCompanySize(String companySize) {
         this.companySize = companySize;
@@ -40,6 +43,7 @@ public class Company {
     /**
      * The country's country code
      */
+    
     public String countryCode;
     public Company withCountryCode(String countryCode) {
         this.countryCode = countryCode;
@@ -49,6 +53,7 @@ public class Company {
     /**
      * A sample of the company's employees. See the employees endpoint for the full list.
      */
+    
     public String[] employees;
     public Company withEmployees(String[] employees) {
         this.employees = employees;
@@ -58,6 +63,7 @@ public class Company {
     /**
      * The number of company employees on LinkedIn
      */
+    
     public Double employeesInLinkedin;
     public Company withEmployeesInLinkedin(Double employeesInLinkedin) {
         this.employeesInLinkedin = employeesInLinkedin;
@@ -67,6 +73,7 @@ public class Company {
     /**
      * The number of company followers on LinkedIn
      */
+    
     public Double followers;
     public Company withFollowers(Double followers) {
         this.followers = followers;
@@ -76,6 +83,7 @@ public class Company {
     /**
      * The year the company was founded
      */
+    
     public Double founded;
     public Company withFounded(Double founded) {
         this.founded = founded;
@@ -85,6 +93,7 @@ public class Company {
     /**
      * The funding status of the company
      */
+    
     public String funding;
     public Company withFunding(String funding) {
         this.funding = funding;
@@ -94,6 +103,7 @@ public class Company {
     /**
      * The country's headquarters
      */
+    
     public String headquarters;
     public Company withHeadquarters(String headquarters) {
         this.headquarters = headquarters;
@@ -103,6 +113,7 @@ public class Company {
     /**
      * The key for looking up the company
      */
+    
     public Double id;
     public Company withId(Double id) {
         this.id = id;
@@ -112,6 +123,7 @@ public class Company {
     /**
      * The company's industries
      */
+    
     public String industries;
     public Company withIndustries(String industries) {
         this.industries = industries;
@@ -121,6 +133,7 @@ public class Company {
     /**
      * The company's investors
      */
+    
     public String investors;
     public Company withInvestors(String investors) {
         this.investors = investors;
@@ -130,6 +143,7 @@ public class Company {
     /**
      * Sample of company's Jobs. See the jobs endpoint for the full list.
      */
+    
     public String[] jobs;
     public Company withJobs(String[] jobs) {
         this.jobs = jobs;
@@ -139,6 +153,7 @@ public class Company {
     /**
      * The company's LinkedIn ID
      */
+    
     public String lid;
     public Company withLid(String lid) {
         this.lid = lid;
@@ -148,6 +163,7 @@ public class Company {
     /**
      * The company's locations
      */
+    
     public String[] locations;
     public Company withLocations(String[] locations) {
         this.locations = locations;
@@ -157,6 +173,7 @@ public class Company {
     /**
      * URL to the company's logo
      */
+    
     public String logo;
     public Company withLogo(String logo) {
         this.logo = logo;
@@ -166,6 +183,7 @@ public class Company {
     /**
      * The company's name
      */
+    
     public String name;
     public Company withName(String name) {
         this.name = name;
@@ -175,6 +193,7 @@ public class Company {
     /**
      * The type of organization
      */
+    
     public String organizationType;
     public Company withOrganizationType(String organizationType) {
         this.organizationType = organizationType;
@@ -184,6 +203,7 @@ public class Company {
     /**
      * The comapny's headquarters region
      */
+    
     public String region;
     public Company withRegion(String region) {
         this.region = region;
@@ -193,6 +213,7 @@ public class Company {
     /**
      * Similar companies to this company
      */
+    
     public String[] similar;
     public Company withSimilar(String[] similar) {
         this.similar = similar;
@@ -202,6 +223,7 @@ public class Company {
     /**
      * The company's slogan
      */
+    
     public String slogan;
     public Company withSlogan(String slogan) {
         this.slogan = slogan;
@@ -211,6 +233,7 @@ public class Company {
     /**
      * The company's specialities
      */
+    
     public String specialities;
     public Company withSpecialities(String specialities) {
         this.specialities = specialities;
@@ -220,6 +243,7 @@ public class Company {
     /**
      * The company's sphere of products
      */
+    
     public String sphere;
     public Company withSphere(String sphere) {
         this.sphere = sphere;
@@ -229,6 +253,7 @@ public class Company {
     /**
      * The type of company (public, private, etc.)
      */
+    
     public String type;
     public Company withType(String type) {
         this.type = type;
@@ -238,6 +263,7 @@ public class Company {
     /**
      * The company's linkedIn URL
      */
+    
     public String url;
     public Company withUrl(String url) {
         this.url = url;
@@ -247,6 +273,7 @@ public class Company {
     /**
      * The company's website
      */
+    
     public String website;
     public Company withWebsite(String website) {
         this.website = website;

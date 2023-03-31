@@ -33,7 +33,7 @@ public class Auths {
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public structure.Structure.models.operations.AuthsResponse auths(structure.Structure.models.operations.AuthsRequest request) throws Exception {
+    public structure.Structure.models.operations.AuthsResponse auths(structure.Structure.models.operations.AuthsApplicationJSON request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/auths");
         

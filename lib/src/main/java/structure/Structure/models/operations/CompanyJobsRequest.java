@@ -4,18 +4,36 @@
 
 package structure.Structure.models.operations;
 
-
+import structure.Structure.utils.SpeakeasyMetadata;
 
 public class CompanyJobsRequest {
-    public CompanyJobsPathParams pathParams;
-    public CompanyJobsRequest withPathParams(CompanyJobsPathParams pathParams) {
-        this.pathParams = pathParams;
+    /**
+     * ID of the company
+     */
+    @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
+    public String id;
+    public CompanyJobsRequest withId(String id) {
+        this.id = id;
         return this;
     }
     
-    public CompanyJobsQueryParams queryParams;
-    public CompanyJobsRequest withQueryParams(CompanyJobsQueryParams queryParams) {
-        this.queryParams = queryParams;
+    /**
+     * The offset number to start at
+     */
+    @SpeakeasyMetadata("queryParam:style=form,explode=true,name=offset")
+    public String offset;
+    public CompanyJobsRequest withOffset(String offset) {
+        this.offset = offset;
+        return this;
+    }
+    
+    /**
+     * Number of results per page (0-100)
+     */
+    @SpeakeasyMetadata("queryParam:style=form,explode=true,name=per_page")
+    public String perPage;
+    public CompanyJobsRequest withPerPage(String perPage) {
+        this.perPage = perPage;
         return this;
     }
     

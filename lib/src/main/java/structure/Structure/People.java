@@ -42,7 +42,7 @@ public class People {
         req.setMethod("GET");
         req.setURL(url);
         
-        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.EnrichPersonQueryParams.class, request.queryParams, null);
+        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.EnrichPersonRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
                 req.addQueryParam(queryParam);
@@ -80,7 +80,7 @@ public class People {
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public structure.Structure.models.operations.SearchSearchResponse searchSearch(structure.Structure.models.operations.SearchSearchRequest request) throws Exception {
+    public structure.Structure.models.operations.SearchSearchResponse searchSearch(structure.Structure.models.operations.SearchSearchApplicationJSON request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/people/search");
         

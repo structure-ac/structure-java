@@ -7,11 +7,13 @@ package structure.Structure.models.operations;
 import java.net.http.HttpResponse;
 
 public class SearchSearchResponse {
+    
     public byte[] body;
     public SearchSearchResponse withBody(byte[] body) {
         this.body = body;
         return this;
     }
+    
     
     public String contentType;
     public SearchSearchResponse withContentType(String contentType) {
@@ -19,11 +21,13 @@ public class SearchSearchResponse {
         return this;
     }
     
+    
     public Integer statusCode;
     public SearchSearchResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
     }
+    
     
     public HttpResponse<byte[]> rawResponse;
     public SearchSearchResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
