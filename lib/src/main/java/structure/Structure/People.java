@@ -10,6 +10,9 @@ import structure.Structure.utils.HTTPClient;
 import structure.Structure.utils.HTTPRequest;
 import structure.Structure.utils.SerializedBody;
 
+/**
+ * People
+ */
 public class People {
 	
 	private HTTPClient _defaultClient;
@@ -34,7 +37,7 @@ public class People {
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public structure.Structure.models.operations.EnrichPersonResponse enrichPerson(structure.Structure.models.operations.EnrichPersonRequest request) throws Exception {
+    public structure.Structure.models.operations.EnrichPersonResponse enrich(structure.Structure.models.operations.EnrichPersonRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/people/enrich");
         
@@ -42,7 +45,7 @@ public class People {
         req.setMethod("GET");
         req.setURL(url);
         
-        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.EnrichPersonQueryParams.class, request.queryParams, null);
+        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.EnrichPersonRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
                 req.addQueryParam(queryParam);
@@ -80,7 +83,7 @@ public class People {
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public structure.Structure.models.operations.SearchSearchResponse searchSearch(structure.Structure.models.operations.SearchSearchRequest request) throws Exception {
+    public structure.Structure.models.operations.SearchPeopleResponse search(structure.Structure.models.operations.SearchPeopleApplicationJSON request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/people/search");
         
@@ -97,7 +100,7 @@ public class People {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.SearchSearchResponse res = new structure.Structure.models.operations.SearchSearchResponse() {{
+        structure.Structure.models.operations.SearchPeopleResponse res = new structure.Structure.models.operations.SearchPeopleResponse() {{
             body = null;
         }};
         res.statusCode = httpRes.statusCode();

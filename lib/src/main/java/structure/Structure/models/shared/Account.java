@@ -10,6 +10,7 @@ public class Account {
     /**
      * List of the users in the account
      */
+    
     public String[] accountUsers;
     public Account withAccountUsers(String[] accountUsers) {
         this.accountUsers = accountUsers;
@@ -19,6 +20,7 @@ public class Account {
     /**
      * Timestamp of the account creation date
      */
+    
     public String createdAt;
     public Account withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
@@ -28,6 +30,7 @@ public class Account {
     /**
      * The id of the account
      */
+    
     public Double id;
     public Account withId(Double id) {
         this.id = id;
@@ -37,6 +40,7 @@ public class Account {
     /**
      * The name of the account
      */
+    
     public String name;
     public Account withName(String name) {
         this.name = name;
@@ -46,6 +50,7 @@ public class Account {
     /**
      * The id of the account owner
      */
+    
     public Double ownerId;
     public Account withOwnerId(Double ownerId) {
         this.ownerId = ownerId;
@@ -55,6 +60,7 @@ public class Account {
     /**
      * If the account is personal or belonging to another account
      */
+    
     public Boolean personal;
     public Account withPersonal(Boolean personal) {
         this.personal = personal;
@@ -64,6 +70,7 @@ public class Account {
     /**
      * Timestamp of the last account update date
      */
+    
     public String updatedAt;
     public Account withUpdatedAt(String updatedAt) {
         this.updatedAt = updatedAt;

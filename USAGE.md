@@ -4,20 +4,26 @@ package hello.world;
 
 import structure.Structure.SDK;
 import structure.Structure.models.shared.Security;
-import structure.Structure.models.operations.AccountsResponse;
+import structure.Structure.models.operations.EnrichCompanyRequest;
+import structure.Structure.models.operations.EnrichCompanyResponse;
 
 public class Application {
     public static void main(String[] args) {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    bearerAuth = new SchemeBearerAuth() {{
-                        authorization = "Bearer YOUR_BEARER_TOKEN_HERE";
-                    }};
+                    bearerAuth = "Bearer YOUR_BEARER_TOKEN_HERE";
                 }})
                 .build();
 
-            AccountsResponse res = sdk.accounts.accounts();
+            EnrichCompanyRequest req = new EnrichCompanyRequest() {{
+                countryCode = "corrupti";
+                headquarters = "provident";
+                id = "distinctio";
+                name = "quibusdam";
+            }}            
+
+            EnrichCompanyResponse res = sdk.companies.enrich(req);
 
             if (res.body.isPresent()) {
                 // handle response

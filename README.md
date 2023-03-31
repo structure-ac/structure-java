@@ -6,7 +6,7 @@
 ### Gradle
 
 ```groovy
-implementation 'structure.Structure:Structure:1.0.0'
+implementation 'structure.Structure:Structure:0.0.3'
 ```
 <!-- End SDK Installation -->
 
@@ -17,20 +17,26 @@ package hello.world;
 
 import structure.Structure.SDK;
 import structure.Structure.models.shared.Security;
-import structure.Structure.models.operations.AccountsResponse;
+import structure.Structure.models.operations.EnrichCompanyRequest;
+import structure.Structure.models.operations.EnrichCompanyResponse;
 
 public class Application {
     public static void main(String[] args) {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    bearerAuth = new SchemeBearerAuth() {{
-                        authorization = "Bearer YOUR_BEARER_TOKEN_HERE";
-                    }};
+                    bearerAuth = "Bearer YOUR_BEARER_TOKEN_HERE";
                 }})
                 .build();
 
-            AccountsResponse res = sdk.accounts.accounts();
+            EnrichCompanyRequest req = new EnrichCompanyRequest() {{
+                countryCode = "corrupti";
+                headquarters = "provident";
+                id = "distinctio";
+                name = "quibusdam";
+            }}            
+
+            EnrichCompanyResponse res = sdk.companies.enrich(req);
 
             if (res.body.isPresent()) {
                 // handle response
@@ -42,32 +48,29 @@ public class Application {
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-## SDK Available Operations
+## Available Resources and Operations
 
 
 ### accounts
 
-* `accounts` - Show current user accounts
-
-### auths
-
-* `auths` - Login user
+* `listUsers` - Show current user accounts
 
 ### companies
 
-* `companyEmployees` - Show company employees
-* `companyJobs` - Show company jobs
-* `enrichCompany` - Enrich a company profile
-* `searchCompanies` - Search Companies
-
-### me
-
-* `me` - Show current user
+* `enrich` - Enrich a company profile
+* `listEmployees` - List company employees
+* `listJobs` - List company jobs
+* `search` - Search Companies
 
 ### people
 
-* `enrichPerson` - Enrich a person profile
-* `searchSearch` - Search People
+* `enrich` - Enrich a person profile
+* `search` - Search People
+
+### user
+
+* `login` - Login user
+* `me` - Show current user
 <!-- End SDK Available Operations -->
 
 ### Maturity

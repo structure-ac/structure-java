@@ -9,7 +9,10 @@ import structure.Structure.utils.HTTPClient;
 import structure.Structure.utils.HTTPRequest;
 import structure.Structure.utils.SerializedBody;
 
-public class Auths {
+/**
+ * User
+ */
+public class User {
 	
 	private HTTPClient _defaultClient;
 	private HTTPClient _securityClient;
@@ -18,7 +21,7 @@ public class Auths {
 	private String _sdkVersion;
 	private String _genVersion;
 
-	public Auths(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
+	public User(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
 		this._defaultClient = defaultClient;
 		this._securityClient = securityClient;
 		this._serverUrl = serverUrl;
@@ -33,7 +36,7 @@ public class Auths {
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public structure.Structure.models.operations.AuthsResponse auths(structure.Structure.models.operations.AuthsRequest request) throws Exception {
+    public structure.Structure.models.operations.LoginResponse login(structure.Structure.models.operations.LoginApplicationJSON request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/auths");
         
@@ -53,7 +56,46 @@ public class Auths {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.AuthsResponse res = new structure.Structure.models.operations.AuthsResponse() {{
+        structure.Structure.models.operations.LoginResponse res = new structure.Structure.models.operations.LoginResponse() {{
+            body = null;
+        }};
+        res.statusCode = httpRes.statusCode();
+        res.contentType = contentType;
+        res.rawResponse = httpRes;
+        
+        if (httpRes.statusCode() == 200) {
+            if (structure.Structure.utils.Utils.matchContentType(contentType, "*/*")) {
+                byte[] out = httpRes.body();
+                res.body = out;
+            }
+        }
+        else if (httpRes.statusCode() == 401) {
+        }
+
+        return res;
+    }
+
+    /**
+     * Show current user
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
+    public structure.Structure.models.operations.MeResponse me() throws Exception {
+        String baseUrl = this._serverUrl;
+        String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/me");
+        
+        HTTPRequest req = new HTTPRequest();
+        req.setMethod("GET");
+        req.setURL(url);
+        
+        
+        HTTPClient client = this._securityClient;
+        
+        HttpResponse<byte[]> httpRes = client.send(req);
+
+        String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
+
+        structure.Structure.models.operations.MeResponse res = new structure.Structure.models.operations.MeResponse() {{
             body = null;
         }};
         res.statusCode = httpRes.statusCode();

@@ -4,12 +4,16 @@
 
 package structure.Structure.models.operations;
 
-
+import structure.Structure.utils.SpeakeasyMetadata;
 
 public class EnrichPersonRequest {
-    public EnrichPersonQueryParams queryParams;
-    public EnrichPersonRequest withQueryParams(EnrichPersonQueryParams queryParams) {
-        this.queryParams = queryParams;
+    /**
+     * LinkedIn ID of the person
+     */
+    @SpeakeasyMetadata("queryParam:style=form,explode=true,name=id")
+    public String id;
+    public EnrichPersonRequest withId(String id) {
+        this.id = id;
         return this;
     }
     
