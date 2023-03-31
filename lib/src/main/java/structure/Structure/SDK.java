@@ -18,18 +18,29 @@ public class SDK {
         "https://www.structure.ac/api/v1",
 	};
   	
+    /**
+     * Accounts
+     */
     public Accounts accounts;
-    public Auths auths;
+    /**
+     * Companies
+     */
     public Companies companies;
-    public Me me;
-    public People people;	
+    /**
+     * People
+     */
+    public People people;
+    /**
+     * User
+     */
+    public User user;	
 
 	private HTTPClient _defaultClient;
 	private HTTPClient _securityClient;
 	private structure.Structure.models.shared.Security _security;
 	private String _serverUrl;
 	private String _language = "java";
-	private String _sdkVersion = "0.0.2";
+	private String _sdkVersion = "0.0.3";
 	private String _genVersion = "2.16.7";
 	/**
 	 * The Builder class allows the configuration of a new instance of the SDK.
@@ -137,15 +148,6 @@ public class SDK {
 			this._genVersion
 		);
 		
-		this.auths = new Auths(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
-		
 		this.companies = new Companies(
 			this._defaultClient,
 			this._securityClient,
@@ -155,7 +157,7 @@ public class SDK {
 			this._genVersion
 		);
 		
-		this.me = new Me(
+		this.people = new People(
 			this._defaultClient,
 			this._securityClient,
 			this._serverUrl,
@@ -164,7 +166,7 @@ public class SDK {
 			this._genVersion
 		);
 		
-		this.people = new People(
+		this.user = new User(
 			this._defaultClient,
 			this._securityClient,
 			this._serverUrl,

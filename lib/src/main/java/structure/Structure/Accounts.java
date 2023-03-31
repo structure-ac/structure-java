@@ -8,6 +8,9 @@ import java.net.http.HttpResponse;
 import structure.Structure.utils.HTTPClient;
 import structure.Structure.utils.HTTPRequest;
 
+/**
+ * Accounts
+ */
 public class Accounts {
 	
 	private HTTPClient _defaultClient;
@@ -31,7 +34,7 @@ public class Accounts {
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public structure.Structure.models.operations.AccountsResponse accounts() throws Exception {
+    public structure.Structure.models.operations.ListUsersResponse listUsers() throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/accounts");
         
@@ -46,7 +49,7 @@ public class Accounts {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.AccountsResponse res = new structure.Structure.models.operations.AccountsResponse() {{
+        structure.Structure.models.operations.ListUsersResponse res = new structure.Structure.models.operations.ListUsersResponse() {{
             body = null;
         }};
         res.statusCode = httpRes.statusCode();

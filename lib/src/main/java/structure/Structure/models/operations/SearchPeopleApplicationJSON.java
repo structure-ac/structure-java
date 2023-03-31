@@ -8,14 +8,14 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SearchSearchApplicationJSON {
+public class SearchPeopleApplicationJSON {
     /**
      * Filter for searching
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("filter")
     public String filter;
-    public SearchSearchApplicationJSON withFilter(String filter) {
+    public SearchPeopleApplicationJSON withFilter(String filter) {
         this.filter = filter;
         return this;
     }
@@ -26,7 +26,7 @@ public class SearchSearchApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("limit")
     public String limit;
-    public SearchSearchApplicationJSON withLimit(String limit) {
+    public SearchPeopleApplicationJSON withLimit(String limit) {
         this.limit = limit;
         return this;
     }
@@ -37,7 +37,7 @@ public class SearchSearchApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("page")
     public String page;
-    public SearchSearchApplicationJSON withPage(String page) {
+    public SearchPeopleApplicationJSON withPage(String page) {
         this.page = page;
         return this;
     }
@@ -48,7 +48,7 @@ public class SearchSearchApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("query")
     public String query;
-    public SearchSearchApplicationJSON withQuery(String query) {
+    public SearchPeopleApplicationJSON withQuery(String query) {
         this.query = query;
         return this;
     }

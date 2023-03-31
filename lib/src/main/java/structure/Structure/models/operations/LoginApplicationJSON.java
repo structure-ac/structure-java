@@ -6,13 +6,13 @@ package structure.Structure.models.operations;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class AuthsApplicationJSON {
+public class LoginApplicationJSON {
     /**
      * The email of the user
      */
     @JsonProperty("email")
     public String email;
-    public AuthsApplicationJSON withEmail(String email) {
+    public LoginApplicationJSON withEmail(String email) {
         this.email = email;
         return this;
     }
@@ -22,7 +22,7 @@ public class AuthsApplicationJSON {
      */
     @JsonProperty("password")
     public String password;
-    public AuthsApplicationJSON withPassword(String password) {
+    public LoginApplicationJSON withPassword(String password) {
         this.password = password;
         return this;
     }

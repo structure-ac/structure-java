@@ -6,13 +6,13 @@ package structure.Structure.models.operations;
 
 import structure.Structure.utils.SpeakeasyMetadata;
 
-public class CompanyEmployeesRequest {
+public class ListEmployeesRequest {
     /**
      * ID of the company
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
-    public CompanyEmployeesRequest withId(String id) {
+    public ListEmployeesRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -22,7 +22,7 @@ public class CompanyEmployeesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=offset")
     public String offset;
-    public CompanyEmployeesRequest withOffset(String offset) {
+    public ListEmployeesRequest withOffset(String offset) {
         this.offset = offset;
         return this;
     }
@@ -32,7 +32,7 @@ public class CompanyEmployeesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=per_page")
     public String perPage;
-    public CompanyEmployeesRequest withPerPage(String perPage) {
+    public ListEmployeesRequest withPerPage(String perPage) {
         this.perPage = perPage;
         return this;
     }

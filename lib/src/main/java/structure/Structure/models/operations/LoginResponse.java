@@ -6,31 +6,31 @@ package structure.Structure.models.operations;
 
 import java.net.http.HttpResponse;
 
-public class CompanyJobsResponse {
+public class LoginResponse {
     
     public byte[] body;
-    public CompanyJobsResponse withBody(byte[] body) {
+    public LoginResponse withBody(byte[] body) {
         this.body = body;
         return this;
     }
     
     
     public String contentType;
-    public CompanyJobsResponse withContentType(String contentType) {
+    public LoginResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
     }
     
     
     public Integer statusCode;
-    public CompanyJobsResponse withStatusCode(Integer statusCode) {
+    public LoginResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
     }
     
     
     public HttpResponse<byte[]> rawResponse;
-    public CompanyJobsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
+    public LoginResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
     }
