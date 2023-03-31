@@ -10,7 +10,7 @@ generation:
   sdkFlattening: true
   singleTagPerOp: false
 java:
-  version: 0.0.3
+  version: ""
   artifactID: Structure
   companyEmail: info@mycompany.com
   companyName: My Company
