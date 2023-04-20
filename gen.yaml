@@ -7,10 +7,10 @@ management:
 generation:
   telemetryEnabled: false
   sdkClassName: SDK
-  sdkFlattening: false
+  sdkFlattening: true
   singleTagPerOp: false
 java:
-  version: 0.1.1
+  version: ""
   artifactID: Structure
   companyEmail: info@mycompany.com
   companyName: My Company
