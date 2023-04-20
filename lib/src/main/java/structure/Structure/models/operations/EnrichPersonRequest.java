@@ -10,7 +10,7 @@ public class EnrichPersonRequest {
     /**
      * LinkedIn ID of the person
      */
-    @SpeakeasyMetadata("queryParam:style=form,explode=true,name=id")
+    @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
     public EnrichPersonRequest withId(String id) {
         this.id = id;

@@ -17,7 +17,7 @@
 ### Gradle
 
 ```groovy
-implementation 'structure.Structure:Structure:0.1.1'
+implementation 'structure.Structure:Structure:0.1.0'
 ```
 <!-- End SDK Installation -->
 
@@ -47,10 +47,7 @@ public class Application {
                 .build();
 
             EnrichCompanyRequest req = new EnrichCompanyRequest() {{
-                countryCode = "corrupti";
-                headquarters = "provident";
-                id = "distinctio";
-                name = "quibusdam";
+                id = "89bd9d8d-69a6-474e-8f46-7cc8796ed151";
             }}            
 
             EnrichCompanyResponse res = sdk.companies.enrich(req);

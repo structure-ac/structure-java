@@ -21,7 +21,7 @@ public class SearchCompaniesApplicationJSON {
     }
     
     /**
-     * Number of results per page (0-100)
+     * Number of results per page (0-100) default 10
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("limit")

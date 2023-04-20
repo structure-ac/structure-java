@@ -201,6 +201,16 @@ public class Company {
     }
     
     /**
+     * The company's profiles
+     */
+    
+    public String[] profiles;
+    public Company withProfiles(String[] profiles) {
+        this.profiles = profiles;
+        return this;
+    }
+    
+    /**
      * The comapny's headquarters region
      */
     

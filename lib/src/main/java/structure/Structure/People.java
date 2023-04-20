@@ -5,7 +5,6 @@
 package structure.Structure;
 
 import java.net.http.HttpResponse;
-import org.apache.http.NameValuePair;
 import structure.Structure.utils.HTTPClient;
 import structure.Structure.utils.HTTPRequest;
 import structure.Structure.utils.SerializedBody;
@@ -39,18 +38,12 @@ public class People {
      */
     public structure.Structure.models.operations.EnrichPersonResponse enrich(structure.Structure.models.operations.EnrichPersonRequest request) throws Exception {
         String baseUrl = this._serverUrl;
-        String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/people/enrich");
+        String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.EnrichPersonRequest.class, baseUrl, "/people/{id}/enrich", request, null);
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
         
-        java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.EnrichPersonRequest.class, request, null);
-        if (queryParams != null) {
-            for (NameValuePair queryParam : queryParams) {
-                req.addQueryParam(queryParam);
-            }
-        }
         
         HTTPClient client = this._securityClient;
         
