@@ -4,6 +4,7 @@
 
 package structure.Structure.models.shared;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import structure.Structure.utils.SpeakeasyMetadata;
 
 public class Security {
@@ -14,4 +15,8 @@ public class Security {
         return this;
     }
     
+
+    public Security(@JsonProperty("bearerAuth") String bearerAuth) {
+    this.bearerAuth = bearerAuth;
+  }
 }

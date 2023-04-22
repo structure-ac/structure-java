@@ -4,6 +4,7 @@
 
 package structure.Structure.models.operations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.net.http.HttpResponse;
 
 public class MeResponse {
@@ -35,4 +36,9 @@ public class MeResponse {
         return this;
     }
     
+
+    public MeResponse(@JsonProperty("ContentType") String contentType, @JsonProperty("StatusCode") Integer statusCode) {
+    this.contentType = contentType;
+this.statusCode = statusCode;
+  }
 }

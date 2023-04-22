@@ -4,6 +4,7 @@
 
 package structure.Structure.models.operations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.net.http.HttpResponse;
 
 public class EnrichCompanyResponse {
@@ -35,4 +36,9 @@ public class EnrichCompanyResponse {
         return this;
     }
     
+
+    public EnrichCompanyResponse(@JsonProperty("ContentType") String contentType, @JsonProperty("StatusCode") Integer statusCode) {
+    this.contentType = contentType;
+this.statusCode = statusCode;
+  }
 }

@@ -53,4 +53,6 @@ public class SearchCompaniesApplicationJSON {
         return this;
     }
     
+
+    public SearchCompaniesApplicationJSON(){}
 }

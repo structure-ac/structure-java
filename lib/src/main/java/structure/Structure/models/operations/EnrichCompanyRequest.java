@@ -4,6 +4,7 @@
 
 package structure.Structure.models.operations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import structure.Structure.utils.SpeakeasyMetadata;
 
 public class EnrichCompanyRequest {
@@ -17,4 +18,8 @@ public class EnrichCompanyRequest {
         return this;
     }
     
+
+    public EnrichCompanyRequest(@JsonProperty("id") String id) {
+    this.id = id;
+  }
 }

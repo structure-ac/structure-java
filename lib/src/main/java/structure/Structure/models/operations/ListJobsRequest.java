@@ -4,6 +4,7 @@
 
 package structure.Structure.models.operations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import structure.Structure.utils.SpeakeasyMetadata;
 
 public class ListJobsRequest {
@@ -37,4 +38,8 @@ public class ListJobsRequest {
         return this;
     }
     
+
+    public ListJobsRequest(@JsonProperty("id") String id) {
+    this.id = id;
+  }
 }

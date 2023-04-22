@@ -53,4 +53,6 @@ public class SearchPeopleApplicationJSON {
         return this;
     }
     
+
+    public SearchPeopleApplicationJSON(){}
 }

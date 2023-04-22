@@ -51,11 +51,9 @@ public class People {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.EnrichPersonResponse res = new structure.Structure.models.operations.EnrichPersonResponse() {{
+        structure.Structure.models.operations.EnrichPersonResponse res = new structure.Structure.models.operations.EnrichPersonResponse(contentType, httpRes.statusCode()) {{
             body = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
@@ -93,11 +91,9 @@ public class People {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.SearchPeopleResponse res = new structure.Structure.models.operations.SearchPeopleResponse() {{
+        structure.Structure.models.operations.SearchPeopleResponse res = new structure.Structure.models.operations.SearchPeopleResponse(contentType, httpRes.statusCode()) {{
             body = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {

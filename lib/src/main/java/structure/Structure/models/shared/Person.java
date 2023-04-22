@@ -4,7 +4,7 @@
 
 package structure.Structure.models.shared;
 
-
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Person - returns the person
@@ -750,4 +750,81 @@ public class Person {
         return this;
     }
     
+
+    public Person(@JsonProperty("birth_date") String birthDate, @JsonProperty("birth_year") Double birthYear, @JsonProperty("certifications") String[] certifications, @JsonProperty("education") String[] education, @JsonProperty("emails") String[] emails, @JsonProperty("experience") String[] experience, @JsonProperty("facebook_id") String facebookId, @JsonProperty("facebook_url") String facebookUrl, @JsonProperty("facebook_username") String facebookUsername, @JsonProperty("first_name") String firstName, @JsonProperty("full_name") String fullName, @JsonProperty("gender") String gender, @JsonProperty("github_url") String githubUrl, @JsonProperty("github_username") String githubUsername, @JsonProperty("id") Double id, @JsonProperty("industry") String industry, @JsonProperty("inferred_salary") String inferredSalary, @JsonProperty("inferred_years_experience") Double inferredYearsExperience, @JsonProperty("interests") String[] interests, @JsonProperty("job_company_facebook_url") String jobCompanyFacebookUrl, @JsonProperty("job_company_founded") String jobCompanyFounded, @JsonProperty("job_company_id") String jobCompanyId, @JsonProperty("job_company_industry") String jobCompanyIndustry, @JsonProperty("job_company_linkedin_id") String jobCompanyLinkedinId, @JsonProperty("job_company_linkedin_url") String jobCompanyLinkedinUrl, @JsonProperty("job_company_location_address_line_2") String jobCompanyLocationAddressLine2, @JsonProperty("job_company_location_continent") String jobCompanyLocationContinent, @JsonProperty("job_company_location_country") String jobCompanyLocationCountry, @JsonProperty("job_company_location_geo") String jobCompanyLocationGeo, @JsonProperty("job_company_location_locality") String jobCompanyLocationLocality, @JsonProperty("job_company_location_metro") String jobCompanyLocationMetro, @JsonProperty("job_company_location_name") String jobCompanyLocationName, @JsonProperty("job_company_location_postal_code") String jobCompanyLocationPostalCode, @JsonProperty("job_company_location_region") String jobCompanyLocationRegion, @JsonProperty("job_company_location_street_address") String jobCompanyLocationStreetAddress, @JsonProperty("job_company_name") String jobCompanyName, @JsonProperty("job_company_size") String jobCompanySize, @JsonProperty("job_company_twitter_url") String jobCompanyTwitterUrl, @JsonProperty("job_company_website") String jobCompanyWebsite, @JsonProperty("job_last_updated") String jobLastUpdated, @JsonProperty("job_start_date") String jobStartDate, @JsonProperty("job_summary") String jobSummary, @JsonProperty("job_title") String jobTitle, @JsonProperty("job_title_levels") String[] jobTitleLevels, @JsonProperty("job_title_role") String jobTitleRole, @JsonProperty("job_title_sub_role") String jobTitleSubRole, @JsonProperty("languages") String[] languages, @JsonProperty("last_name") String lastName, @JsonProperty("linkedin_connections") Double linkedinConnections, @JsonProperty("linkedin_id") Double linkedinId, @JsonProperty("linkedin_url") String linkedinUrl, @JsonProperty("linkedin_username") String linkedinUsername, @JsonProperty("location_address_line_two") String locationAddressLineTwo, @JsonProperty("location_continent") String locationContinent, @JsonProperty("location_country") String locationCountry, @JsonProperty("location_geo") String[] locationGeo, @JsonProperty("location_last_updated") String locationLastUpdated, @JsonProperty("location_locality") String locationLocality, @JsonProperty("location_metro") String locationMetro, @JsonProperty("location_name") String locationName, @JsonProperty("location_postal_code") String locationPostalCode, @JsonProperty("location_region") String locationRegion, @JsonProperty("location_street_address") String locationStreetAddress, @JsonProperty("middle_initial") String middleInitial, @JsonProperty("middle_name") String middleName, @JsonProperty("mobile_phone") String mobilePhone, @JsonProperty("phone_numbers") String[] phoneNumbers, @JsonProperty("profiles") String[] profiles, @JsonProperty("skills") String[] skills, @JsonProperty("street_addresses") String[] streetAddresses, @JsonProperty("summary") String summary, @JsonProperty("twitter_url") String twitterUrl, @JsonProperty("twitter_username") String twitterUsername, @JsonProperty("work_email") String workEmail) {
+    this.birthDate = birthDate;
+this.birthYear = birthYear;
+this.certifications = certifications;
+this.education = education;
+this.emails = emails;
+this.experience = experience;
+this.facebookId = facebookId;
+this.facebookUrl = facebookUrl;
+this.facebookUsername = facebookUsername;
+this.firstName = firstName;
+this.fullName = fullName;
+this.gender = gender;
+this.githubUrl = githubUrl;
+this.githubUsername = githubUsername;
+this.id = id;
+this.industry = industry;
+this.inferredSalary = inferredSalary;
+this.inferredYearsExperience = inferredYearsExperience;
+this.interests = interests;
+this.jobCompanyFacebookUrl = jobCompanyFacebookUrl;
+this.jobCompanyFounded = jobCompanyFounded;
+this.jobCompanyId = jobCompanyId;
+this.jobCompanyIndustry = jobCompanyIndustry;
+this.jobCompanyLinkedinId = jobCompanyLinkedinId;
+this.jobCompanyLinkedinUrl = jobCompanyLinkedinUrl;
+this.jobCompanyLocationAddressLine2 = jobCompanyLocationAddressLine2;
+this.jobCompanyLocationContinent = jobCompanyLocationContinent;
+this.jobCompanyLocationCountry = jobCompanyLocationCountry;
+this.jobCompanyLocationGeo = jobCompanyLocationGeo;
+this.jobCompanyLocationLocality = jobCompanyLocationLocality;
+this.jobCompanyLocationMetro = jobCompanyLocationMetro;
+this.jobCompanyLocationName = jobCompanyLocationName;
+this.jobCompanyLocationPostalCode = jobCompanyLocationPostalCode;
+this.jobCompanyLocationRegion = jobCompanyLocationRegion;
+this.jobCompanyLocationStreetAddress = jobCompanyLocationStreetAddress;
+this.jobCompanyName = jobCompanyName;
+this.jobCompanySize = jobCompanySize;
+this.jobCompanyTwitterUrl = jobCompanyTwitterUrl;
+this.jobCompanyWebsite = jobCompanyWebsite;
+this.jobLastUpdated = jobLastUpdated;
+this.jobStartDate = jobStartDate;
+this.jobSummary = jobSummary;
+this.jobTitle = jobTitle;
+this.jobTitleLevels = jobTitleLevels;
+this.jobTitleRole = jobTitleRole;
+this.jobTitleSubRole = jobTitleSubRole;
+this.languages = languages;
+this.lastName = lastName;
+this.linkedinConnections = linkedinConnections;
+this.linkedinId = linkedinId;
+this.linkedinUrl = linkedinUrl;
+this.linkedinUsername = linkedinUsername;
+this.locationAddressLineTwo = locationAddressLineTwo;
+this.locationContinent = locationContinent;
+this.locationCountry = locationCountry;
+this.locationGeo = locationGeo;
+this.locationLastUpdated = locationLastUpdated;
+this.locationLocality = locationLocality;
+this.locationMetro = locationMetro;
+this.locationName = locationName;
+this.locationPostalCode = locationPostalCode;
+this.locationRegion = locationRegion;
+this.locationStreetAddress = locationStreetAddress;
+this.middleInitial = middleInitial;
+this.middleName = middleName;
+this.mobilePhone = mobilePhone;
+this.phoneNumbers = phoneNumbers;
+this.profiles = profiles;
+this.skills = skills;
+this.streetAddresses = streetAddresses;
+this.summary = summary;
+this.twitterUrl = twitterUrl;
+this.twitterUsername = twitterUsername;
+this.workEmail = workEmail;
+  }
 }

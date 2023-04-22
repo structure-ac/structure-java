@@ -17,7 +17,7 @@
 ### Gradle
 
 ```groovy
-implementation 'structure.Structure:Structure:0.1.0'
+implementation 'structure.Structure:Structure:0.2.0'
 ```
 <!-- End SDK Installation -->
 
@@ -41,14 +41,12 @@ public class Application {
     public static void main(String[] args) {
         try {
             SDK sdk = SDK.builder()
-                .setSecurity(new Security() {{
+                .setSecurity(new Security("corrupti") {{
                     bearerAuth = "Bearer YOUR_BEARER_TOKEN_HERE";
                 }})
                 .build();
 
-            EnrichCompanyRequest req = new EnrichCompanyRequest() {{
-                id = "89bd9d8d-69a6-474e-8f46-7cc8796ed151";
-            }}            
+            EnrichCompanyRequest req = new EnrichCompanyRequest("provident");            
 
             EnrichCompanyResponse res = sdk.companies.enrich(req);
 

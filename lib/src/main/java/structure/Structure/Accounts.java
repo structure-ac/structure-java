@@ -49,11 +49,9 @@ public class Accounts {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.ListUsersResponse res = new structure.Structure.models.operations.ListUsersResponse() {{
+        structure.Structure.models.operations.ListUsersResponse res = new structure.Structure.models.operations.ListUsersResponse(contentType, httpRes.statusCode()) {{
             body = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {

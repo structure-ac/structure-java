@@ -52,11 +52,9 @@ public class Companies {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.EnrichCompanyResponse res = new structure.Structure.models.operations.EnrichCompanyResponse() {{
+        structure.Structure.models.operations.EnrichCompanyResponse res = new structure.Structure.models.operations.EnrichCompanyResponse(contentType, httpRes.statusCode()) {{
             body = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
@@ -98,11 +96,9 @@ public class Companies {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.ListEmployeesResponse res = new structure.Structure.models.operations.ListEmployeesResponse() {{
+        structure.Structure.models.operations.ListEmployeesResponse res = new structure.Structure.models.operations.ListEmployeesResponse(contentType, httpRes.statusCode()) {{
             body = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
@@ -144,11 +140,9 @@ public class Companies {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.ListJobsResponse res = new structure.Structure.models.operations.ListJobsResponse() {{
+        structure.Structure.models.operations.ListJobsResponse res = new structure.Structure.models.operations.ListJobsResponse(contentType, httpRes.statusCode()) {{
             body = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
@@ -186,11 +180,9 @@ public class Companies {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        structure.Structure.models.operations.SearchCompaniesResponse res = new structure.Structure.models.operations.SearchCompaniesResponse() {{
+        structure.Structure.models.operations.SearchCompaniesResponse res = new structure.Structure.models.operations.SearchCompaniesResponse(contentType, httpRes.statusCode()) {{
             body = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
