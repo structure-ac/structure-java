@@ -27,9 +27,8 @@ public class LoginApplicationJSON {
         return this;
     }
     
-
     public LoginApplicationJSON(@JsonProperty("email") String email, @JsonProperty("password") String password) {
-    this.email = email;
-this.password = password;
+        this.email = email;
+        this.password = password;
   }
 }

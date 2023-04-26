@@ -38,8 +38,7 @@ public class ListJobsRequest {
         return this;
     }
     
-
     public ListJobsRequest(@JsonProperty("id") String id) {
-    this.id = id;
+        this.id = id;
   }
 }

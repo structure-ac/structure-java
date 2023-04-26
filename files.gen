@@ -53,4 +53,9 @@ lib/src/main/java/structure/Structure/models/shared/Account.java
 lib/src/main/java/structure/Structure/models/shared/Company.java
 lib/src/main/java/structure/Structure/models/shared/Person.java
 lib/src/main/java/structure/Structure/models/shared/Security.java
+docs/sdk/README.md
+docs/accounts/README.md
+docs/companies/README.md
+docs/people/README.md
+docs/user/README.md
 USAGE.md

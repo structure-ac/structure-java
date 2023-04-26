@@ -1,24 +1,36 @@
-<!-- Start SDK Example Usage -->
+# accounts
+
+## Overview
+
+Accounts
+
+### Available Operations
+
+* [listUsers](#listusers) - Show current user accounts
+
+## listUsers
+
+Show current user accounts
+
+### Example Usage
+
 ```java
 package hello.world;
 
 import structure.Structure.SDK;
-import structure.Structure.models.operations.EnrichCompanyRequest;
-import structure.Structure.models.operations.EnrichCompanyResponse;
+import structure.Structure.models.operations.ListUsersResponse;
 import structure.Structure.models.shared.Security;
 
 public class Application {
     public static void main(String[] args) {
         try {
             SDK sdk = SDK.builder()
-                .setSecurity(new Security("corrupti") {{
+                .setSecurity(new Security("distinctio") {{
                     bearerAuth = "Bearer YOUR_BEARER_TOKEN_HERE";
                 }})
                 .build();
 
-            EnrichCompanyRequest req = new EnrichCompanyRequest("provident");            
-
-            EnrichCompanyResponse res = sdk.companies.enrich(req);
+            ListUsersResponse res = sdk.accounts.listUsers();
 
             if (res.body != null) {
                 // handle response
@@ -29,4 +41,3 @@ public class Application {
     }
 }
 ```
-<!-- End SDK Example Usage -->

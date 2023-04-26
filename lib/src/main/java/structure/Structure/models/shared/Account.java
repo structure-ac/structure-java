@@ -77,14 +77,13 @@ public class Account {
         return this;
     }
     
-
     public Account(@JsonProperty("account_users") String[] accountUsers, @JsonProperty("created_at") String createdAt, @JsonProperty("id") Double id, @JsonProperty("name") String name, @JsonProperty("owner_id") Double ownerId, @JsonProperty("personal") Boolean personal, @JsonProperty("updated_at") String updatedAt) {
-    this.accountUsers = accountUsers;
-this.createdAt = createdAt;
-this.id = id;
-this.name = name;
-this.ownerId = ownerId;
-this.personal = personal;
-this.updatedAt = updatedAt;
+        this.accountUsers = accountUsers;
+        this.createdAt = createdAt;
+        this.id = id;
+        this.name = name;
+        this.ownerId = ownerId;
+        this.personal = personal;
+        this.updatedAt = updatedAt;
   }
 }

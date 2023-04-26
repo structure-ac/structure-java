@@ -17,7 +17,7 @@
 ### Gradle
 
 ```groovy
-implementation 'structure.Structure:Structure:0.2.0'
+implementation 'structure.Structure:Structure:0.3.0'
 ```
 <!-- End SDK Installation -->
 
@@ -33,9 +33,9 @@ Authentication with the Structure API is using OAuth2. When establishing a conne
 package hello.world;
 
 import structure.Structure.SDK;
-import structure.Structure.models.shared.Security;
 import structure.Structure.models.operations.EnrichCompanyRequest;
 import structure.Structure.models.operations.EnrichCompanyResponse;
+import structure.Structure.models.shared.Security;
 
 public class Application {
     public static void main(String[] args) {
@@ -50,12 +50,14 @@ public class Application {
 
             EnrichCompanyResponse res = sdk.companies.enrich(req);
 
-            if (res.body.isPresent()) {
+            if (res.body != null) {
                 // handle response
             }
         } catch (Exception e) {
             // handle exception
         }
+    }
+}
 ```
 <!-- End SDK Example Usage -->
 
@@ -63,26 +65,26 @@ public class Application {
 ## Available Resources and Operations
 
 
-### accounts
+### [accounts](docs/accounts/README.md)
 
-* `listUsers` - Show current user accounts
+* [listUsers](docs/accounts/README.md#listusers) - Show current user accounts
 
-### companies
+### [companies](docs/companies/README.md)
 
-* `enrich` - Enrich a company profile
-* `listEmployees` - List company employees
-* `listJobs` - List company jobs
-* `search` - Search Companies
+* [enrich](docs/companies/README.md#enrich) - Enrich a company profile
+* [listEmployees](docs/companies/README.md#listemployees) - List company employees
+* [listJobs](docs/companies/README.md#listjobs) - List company jobs
+* [search](docs/companies/README.md#search) - Search Companies
 
-### people
+### [people](docs/people/README.md)
 
-* `enrich` - Enrich a person profile
-* `search` - Search People
+* [enrich](docs/people/README.md#enrich) - Enrich a person profile
+* [search](docs/people/README.md#search) - Search People
 
-### user
+### [user](docs/user/README.md)
 
-* `login` - Login user
-* `me` - Show current user
+* [login](docs/user/README.md#login) - Login user
+* [me](docs/user/README.md#me) - Show current user
 <!-- End SDK Available Operations -->
 
 ### Maturity

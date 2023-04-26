@@ -18,8 +18,7 @@ public class EnrichPersonRequest {
         return this;
     }
     
-
     public EnrichPersonRequest(@JsonProperty("id") String id) {
-    this.id = id;
+        this.id = id;
   }
 }

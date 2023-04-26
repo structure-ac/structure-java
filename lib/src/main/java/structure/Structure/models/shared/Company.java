@@ -290,35 +290,34 @@ public class Company {
         return this;
     }
     
-
     public Company(@JsonProperty("about") String about, @JsonProperty("affiliated") String[] affiliated, @JsonProperty("company_size") String companySize, @JsonProperty("country_code") String countryCode, @JsonProperty("employees") String[] employees, @JsonProperty("employees_in_linkedin") Double employeesInLinkedin, @JsonProperty("followers") Double followers, @JsonProperty("founded") Double founded, @JsonProperty("funding") String funding, @JsonProperty("headquarters") String headquarters, @JsonProperty("id") Double id, @JsonProperty("industries") String industries, @JsonProperty("investors") String investors, @JsonProperty("jobs") String[] jobs, @JsonProperty("lid") String lid, @JsonProperty("locations") String[] locations, @JsonProperty("logo") String logo, @JsonProperty("name") String name, @JsonProperty("organization_type") String organizationType, @JsonProperty("profiles") String[] profiles, @JsonProperty("region") String region, @JsonProperty("similar") String[] similar, @JsonProperty("slogan") String slogan, @JsonProperty("specialities") String specialities, @JsonProperty("sphere") String sphere, @JsonProperty("type") String type, @JsonProperty("url") String url, @JsonProperty("website") String website) {
-    this.about = about;
-this.affiliated = affiliated;
-this.companySize = companySize;
-this.countryCode = countryCode;
-this.employees = employees;
-this.employeesInLinkedin = employeesInLinkedin;
-this.followers = followers;
-this.founded = founded;
-this.funding = funding;
-this.headquarters = headquarters;
-this.id = id;
-this.industries = industries;
-this.investors = investors;
-this.jobs = jobs;
-this.lid = lid;
-this.locations = locations;
-this.logo = logo;
-this.name = name;
-this.organizationType = organizationType;
-this.profiles = profiles;
-this.region = region;
-this.similar = similar;
-this.slogan = slogan;
-this.specialities = specialities;
-this.sphere = sphere;
-this.type = type;
-this.url = url;
-this.website = website;
+        this.about = about;
+        this.affiliated = affiliated;
+        this.companySize = companySize;
+        this.countryCode = countryCode;
+        this.employees = employees;
+        this.employeesInLinkedin = employeesInLinkedin;
+        this.followers = followers;
+        this.founded = founded;
+        this.funding = funding;
+        this.headquarters = headquarters;
+        this.id = id;
+        this.industries = industries;
+        this.investors = investors;
+        this.jobs = jobs;
+        this.lid = lid;
+        this.locations = locations;
+        this.logo = logo;
+        this.name = name;
+        this.organizationType = organizationType;
+        this.profiles = profiles;
+        this.region = region;
+        this.similar = similar;
+        this.slogan = slogan;
+        this.specialities = specialities;
+        this.sphere = sphere;
+        this.type = type;
+        this.url = url;
+        this.website = website;
   }
 }
