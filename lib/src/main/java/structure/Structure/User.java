@@ -30,12 +30,6 @@ public class User {
 		this._genVersion = genVersion;
 	}
 
-    /**
-     * Login user
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public structure.Structure.models.operations.LoginResponse login(structure.Structure.models.operations.LoginApplicationJSON request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/auths");
@@ -73,11 +67,6 @@ public class User {
         return res;
     }
 
-    /**
-     * Show current user
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public structure.Structure.models.operations.MeResponse me() throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/me");
