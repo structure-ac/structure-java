@@ -13,6 +13,7 @@ public class EnrichPersonRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
+
     public EnrichPersonRequest withId(String id) {
         this.id = id;
         return this;

@@ -30,6 +30,12 @@ public class People {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Enrich a person profile
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public structure.Structure.models.operations.EnrichPersonResponse enrich(structure.Structure.models.operations.EnrichPersonRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.EnrichPersonRequest.class, baseUrl, "/people/{id}/enrich", request, null);
@@ -62,6 +68,12 @@ public class People {
         return res;
     }
 
+    /**
+     * Search People
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public structure.Structure.models.operations.SearchPeopleResponse search(structure.Structure.models.operations.SearchPeopleApplicationJSON request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/people/search");

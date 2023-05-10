@@ -13,6 +13,7 @@ public class ListEmployeesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
+
     public ListEmployeesRequest withId(String id) {
         this.id = id;
         return this;
@@ -23,6 +24,7 @@ public class ListEmployeesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=offset")
     public String offset;
+
     public ListEmployeesRequest withOffset(String offset) {
         this.offset = offset;
         return this;
@@ -33,6 +35,7 @@ public class ListEmployeesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=per_page")
     public String perPage;
+
     public ListEmployeesRequest withPerPage(String perPage) {
         this.perPage = perPage;
         return this;

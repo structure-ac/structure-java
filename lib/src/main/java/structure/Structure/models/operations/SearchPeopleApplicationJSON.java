@@ -15,6 +15,7 @@ public class SearchPeopleApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("filter")
     public String filter;
+
     public SearchPeopleApplicationJSON withFilter(String filter) {
         this.filter = filter;
         return this;
@@ -26,6 +27,7 @@ public class SearchPeopleApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("limit")
     public String limit;
+
     public SearchPeopleApplicationJSON withLimit(String limit) {
         this.limit = limit;
         return this;
@@ -37,6 +39,7 @@ public class SearchPeopleApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("page")
     public String page;
+
     public SearchPeopleApplicationJSON withPage(String page) {
         this.page = page;
         return this;
@@ -48,6 +51,7 @@ public class SearchPeopleApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("query")
     public String query;
+
     public SearchPeopleApplicationJSON withQuery(String query) {
         this.query = query;
         return this;

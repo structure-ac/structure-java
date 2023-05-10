@@ -29,6 +29,11 @@ public class Accounts {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Show current user accounts
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public structure.Structure.models.operations.ListUsersResponse listUsers() throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/accounts");

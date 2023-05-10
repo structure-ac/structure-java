@@ -15,6 +15,7 @@ public class Person {
      */
     
     public String birthDate;
+
     public Person withBirthDate(String birthDate) {
         this.birthDate = birthDate;
         return this;
@@ -25,6 +26,7 @@ public class Person {
      */
     
     public Double birthYear;
+
     public Person withBirthYear(Double birthYear) {
         this.birthYear = birthYear;
         return this;
@@ -35,6 +37,7 @@ public class Person {
      */
     
     public String[] certifications;
+
     public Person withCertifications(String[] certifications) {
         this.certifications = certifications;
         return this;
@@ -45,6 +48,7 @@ public class Person {
      */
     
     public String[] education;
+
     public Person withEducation(String[] education) {
         this.education = education;
         return this;
@@ -55,6 +59,7 @@ public class Person {
      */
     
     public String[] emails;
+
     public Person withEmails(String[] emails) {
         this.emails = emails;
         return this;
@@ -65,6 +70,7 @@ public class Person {
      */
     
     public String[] experience;
+
     public Person withExperience(String[] experience) {
         this.experience = experience;
         return this;
@@ -75,6 +81,7 @@ public class Person {
      */
     
     public String facebookId;
+
     public Person withFacebookId(String facebookId) {
         this.facebookId = facebookId;
         return this;
@@ -85,6 +92,7 @@ public class Person {
      */
     
     public String facebookUrl;
+
     public Person withFacebookUrl(String facebookUrl) {
         this.facebookUrl = facebookUrl;
         return this;
@@ -95,6 +103,7 @@ public class Person {
      */
     
     public String facebookUsername;
+
     public Person withFacebookUsername(String facebookUsername) {
         this.facebookUsername = facebookUsername;
         return this;
@@ -105,6 +114,7 @@ public class Person {
      */
     
     public String firstName;
+
     public Person withFirstName(String firstName) {
         this.firstName = firstName;
         return this;
@@ -115,6 +125,7 @@ public class Person {
      */
     
     public String fullName;
+
     public Person withFullName(String fullName) {
         this.fullName = fullName;
         return this;
@@ -125,6 +136,7 @@ public class Person {
      */
     
     public String gender;
+
     public Person withGender(String gender) {
         this.gender = gender;
         return this;
@@ -135,6 +147,7 @@ public class Person {
      */
     
     public String githubUrl;
+
     public Person withGithubUrl(String githubUrl) {
         this.githubUrl = githubUrl;
         return this;
@@ -145,6 +158,7 @@ public class Person {
      */
     
     public String githubUsername;
+
     public Person withGithubUsername(String githubUsername) {
         this.githubUsername = githubUsername;
         return this;
@@ -155,6 +169,7 @@ public class Person {
      */
     
     public Double id;
+
     public Person withId(Double id) {
         this.id = id;
         return this;
@@ -165,6 +180,7 @@ public class Person {
      */
     
     public String industry;
+
     public Person withIndustry(String industry) {
         this.industry = industry;
         return this;
@@ -175,6 +191,7 @@ public class Person {
      */
     
     public String inferredSalary;
+
     public Person withInferredSalary(String inferredSalary) {
         this.inferredSalary = inferredSalary;
         return this;
@@ -185,6 +202,7 @@ public class Person {
      */
     
     public Double inferredYearsExperience;
+
     public Person withInferredYearsExperience(Double inferredYearsExperience) {
         this.inferredYearsExperience = inferredYearsExperience;
         return this;
@@ -195,6 +213,7 @@ public class Person {
      */
     
     public String[] interests;
+
     public Person withInterests(String[] interests) {
         this.interests = interests;
         return this;
@@ -205,6 +224,7 @@ public class Person {
      */
     
     public String jobCompanyFacebookUrl;
+
     public Person withJobCompanyFacebookUrl(String jobCompanyFacebookUrl) {
         this.jobCompanyFacebookUrl = jobCompanyFacebookUrl;
         return this;
@@ -215,6 +235,7 @@ public class Person {
      */
     
     public String jobCompanyFounded;
+
     public Person withJobCompanyFounded(String jobCompanyFounded) {
         this.jobCompanyFounded = jobCompanyFounded;
         return this;
@@ -225,6 +246,7 @@ public class Person {
      */
     
     public String jobCompanyId;
+
     public Person withJobCompanyId(String jobCompanyId) {
         this.jobCompanyId = jobCompanyId;
         return this;
@@ -235,6 +257,7 @@ public class Person {
      */
     
     public String jobCompanyIndustry;
+
     public Person withJobCompanyIndustry(String jobCompanyIndustry) {
         this.jobCompanyIndustry = jobCompanyIndustry;
         return this;
@@ -245,6 +268,7 @@ public class Person {
      */
     
     public String jobCompanyLinkedinId;
+
     public Person withJobCompanyLinkedinId(String jobCompanyLinkedinId) {
         this.jobCompanyLinkedinId = jobCompanyLinkedinId;
         return this;
@@ -255,6 +279,7 @@ public class Person {
      */
     
     public String jobCompanyLinkedinUrl;
+
     public Person withJobCompanyLinkedinUrl(String jobCompanyLinkedinUrl) {
         this.jobCompanyLinkedinUrl = jobCompanyLinkedinUrl;
         return this;
@@ -265,6 +290,7 @@ public class Person {
      */
     
     public String jobCompanyLocationAddressLine2;
+
     public Person withJobCompanyLocationAddressLine2(String jobCompanyLocationAddressLine2) {
         this.jobCompanyLocationAddressLine2 = jobCompanyLocationAddressLine2;
         return this;
@@ -275,6 +301,7 @@ public class Person {
      */
     
     public String jobCompanyLocationContinent;
+
     public Person withJobCompanyLocationContinent(String jobCompanyLocationContinent) {
         this.jobCompanyLocationContinent = jobCompanyLocationContinent;
         return this;
@@ -285,6 +312,7 @@ public class Person {
      */
     
     public String jobCompanyLocationCountry;
+
     public Person withJobCompanyLocationCountry(String jobCompanyLocationCountry) {
         this.jobCompanyLocationCountry = jobCompanyLocationCountry;
         return this;
@@ -295,6 +323,7 @@ public class Person {
      */
     
     public String jobCompanyLocationGeo;
+
     public Person withJobCompanyLocationGeo(String jobCompanyLocationGeo) {
         this.jobCompanyLocationGeo = jobCompanyLocationGeo;
         return this;
@@ -305,6 +334,7 @@ public class Person {
      */
     
     public String jobCompanyLocationLocality;
+
     public Person withJobCompanyLocationLocality(String jobCompanyLocationLocality) {
         this.jobCompanyLocationLocality = jobCompanyLocationLocality;
         return this;
@@ -315,6 +345,7 @@ public class Person {
      */
     
     public String jobCompanyLocationMetro;
+
     public Person withJobCompanyLocationMetro(String jobCompanyLocationMetro) {
         this.jobCompanyLocationMetro = jobCompanyLocationMetro;
         return this;
@@ -325,6 +356,7 @@ public class Person {
      */
     
     public String jobCompanyLocationName;
+
     public Person withJobCompanyLocationName(String jobCompanyLocationName) {
         this.jobCompanyLocationName = jobCompanyLocationName;
         return this;
@@ -335,6 +367,7 @@ public class Person {
      */
     
     public String jobCompanyLocationPostalCode;
+
     public Person withJobCompanyLocationPostalCode(String jobCompanyLocationPostalCode) {
         this.jobCompanyLocationPostalCode = jobCompanyLocationPostalCode;
         return this;
@@ -345,6 +378,7 @@ public class Person {
      */
     
     public String jobCompanyLocationRegion;
+
     public Person withJobCompanyLocationRegion(String jobCompanyLocationRegion) {
         this.jobCompanyLocationRegion = jobCompanyLocationRegion;
         return this;
@@ -355,6 +389,7 @@ public class Person {
      */
     
     public String jobCompanyLocationStreetAddress;
+
     public Person withJobCompanyLocationStreetAddress(String jobCompanyLocationStreetAddress) {
         this.jobCompanyLocationStreetAddress = jobCompanyLocationStreetAddress;
         return this;
@@ -365,6 +400,7 @@ public class Person {
      */
     
     public String jobCompanyName;
+
     public Person withJobCompanyName(String jobCompanyName) {
         this.jobCompanyName = jobCompanyName;
         return this;
@@ -375,6 +411,7 @@ public class Person {
      */
     
     public String jobCompanySize;
+
     public Person withJobCompanySize(String jobCompanySize) {
         this.jobCompanySize = jobCompanySize;
         return this;
@@ -385,6 +422,7 @@ public class Person {
      */
     
     public String jobCompanyTwitterUrl;
+
     public Person withJobCompanyTwitterUrl(String jobCompanyTwitterUrl) {
         this.jobCompanyTwitterUrl = jobCompanyTwitterUrl;
         return this;
@@ -395,6 +433,7 @@ public class Person {
      */
     
     public String jobCompanyWebsite;
+
     public Person withJobCompanyWebsite(String jobCompanyWebsite) {
         this.jobCompanyWebsite = jobCompanyWebsite;
         return this;
@@ -405,6 +444,7 @@ public class Person {
      */
     
     public String jobLastUpdated;
+
     public Person withJobLastUpdated(String jobLastUpdated) {
         this.jobLastUpdated = jobLastUpdated;
         return this;
@@ -415,6 +455,7 @@ public class Person {
      */
     
     public String jobStartDate;
+
     public Person withJobStartDate(String jobStartDate) {
         this.jobStartDate = jobStartDate;
         return this;
@@ -425,6 +466,7 @@ public class Person {
      */
     
     public String jobSummary;
+
     public Person withJobSummary(String jobSummary) {
         this.jobSummary = jobSummary;
         return this;
@@ -435,6 +477,7 @@ public class Person {
      */
     
     public String jobTitle;
+
     public Person withJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
         return this;
@@ -445,6 +488,7 @@ public class Person {
      */
     
     public String[] jobTitleLevels;
+
     public Person withJobTitleLevels(String[] jobTitleLevels) {
         this.jobTitleLevels = jobTitleLevels;
         return this;
@@ -455,6 +499,7 @@ public class Person {
      */
     
     public String jobTitleRole;
+
     public Person withJobTitleRole(String jobTitleRole) {
         this.jobTitleRole = jobTitleRole;
         return this;
@@ -465,6 +510,7 @@ public class Person {
      */
     
     public String jobTitleSubRole;
+
     public Person withJobTitleSubRole(String jobTitleSubRole) {
         this.jobTitleSubRole = jobTitleSubRole;
         return this;
@@ -475,6 +521,7 @@ public class Person {
      */
     
     public String[] languages;
+
     public Person withLanguages(String[] languages) {
         this.languages = languages;
         return this;
@@ -485,6 +532,7 @@ public class Person {
      */
     
     public String lastName;
+
     public Person withLastName(String lastName) {
         this.lastName = lastName;
         return this;
@@ -495,6 +543,7 @@ public class Person {
      */
     
     public Double linkedinConnections;
+
     public Person withLinkedinConnections(Double linkedinConnections) {
         this.linkedinConnections = linkedinConnections;
         return this;
@@ -505,6 +554,7 @@ public class Person {
      */
     
     public Double linkedinId;
+
     public Person withLinkedinId(Double linkedinId) {
         this.linkedinId = linkedinId;
         return this;
@@ -515,6 +565,7 @@ public class Person {
      */
     
     public String linkedinUrl;
+
     public Person withLinkedinUrl(String linkedinUrl) {
         this.linkedinUrl = linkedinUrl;
         return this;
@@ -525,6 +576,7 @@ public class Person {
      */
     
     public String linkedinUsername;
+
     public Person withLinkedinUsername(String linkedinUsername) {
         this.linkedinUsername = linkedinUsername;
         return this;
@@ -535,6 +587,7 @@ public class Person {
      */
     
     public String locationAddressLineTwo;
+
     public Person withLocationAddressLineTwo(String locationAddressLineTwo) {
         this.locationAddressLineTwo = locationAddressLineTwo;
         return this;
@@ -545,6 +598,7 @@ public class Person {
      */
     
     public String locationContinent;
+
     public Person withLocationContinent(String locationContinent) {
         this.locationContinent = locationContinent;
         return this;
@@ -555,6 +609,7 @@ public class Person {
      */
     
     public String locationCountry;
+
     public Person withLocationCountry(String locationCountry) {
         this.locationCountry = locationCountry;
         return this;
@@ -565,6 +620,7 @@ public class Person {
      */
     
     public String[] locationGeo;
+
     public Person withLocationGeo(String[] locationGeo) {
         this.locationGeo = locationGeo;
         return this;
@@ -575,6 +631,7 @@ public class Person {
      */
     
     public String locationLastUpdated;
+
     public Person withLocationLastUpdated(String locationLastUpdated) {
         this.locationLastUpdated = locationLastUpdated;
         return this;
@@ -585,6 +642,7 @@ public class Person {
      */
     
     public String locationLocality;
+
     public Person withLocationLocality(String locationLocality) {
         this.locationLocality = locationLocality;
         return this;
@@ -595,6 +653,7 @@ public class Person {
      */
     
     public String locationMetro;
+
     public Person withLocationMetro(String locationMetro) {
         this.locationMetro = locationMetro;
         return this;
@@ -605,6 +664,7 @@ public class Person {
      */
     
     public String locationName;
+
     public Person withLocationName(String locationName) {
         this.locationName = locationName;
         return this;
@@ -615,6 +675,7 @@ public class Person {
      */
     
     public String locationPostalCode;
+
     public Person withLocationPostalCode(String locationPostalCode) {
         this.locationPostalCode = locationPostalCode;
         return this;
@@ -625,6 +686,7 @@ public class Person {
      */
     
     public String locationRegion;
+
     public Person withLocationRegion(String locationRegion) {
         this.locationRegion = locationRegion;
         return this;
@@ -635,6 +697,7 @@ public class Person {
      */
     
     public String locationStreetAddress;
+
     public Person withLocationStreetAddress(String locationStreetAddress) {
         this.locationStreetAddress = locationStreetAddress;
         return this;
@@ -645,6 +708,7 @@ public class Person {
      */
     
     public String middleInitial;
+
     public Person withMiddleInitial(String middleInitial) {
         this.middleInitial = middleInitial;
         return this;
@@ -655,6 +719,7 @@ public class Person {
      */
     
     public String middleName;
+
     public Person withMiddleName(String middleName) {
         this.middleName = middleName;
         return this;
@@ -665,6 +730,7 @@ public class Person {
      */
     
     public String mobilePhone;
+
     public Person withMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
         return this;
@@ -675,6 +741,7 @@ public class Person {
      */
     
     public String[] phoneNumbers;
+
     public Person withPhoneNumbers(String[] phoneNumbers) {
         this.phoneNumbers = phoneNumbers;
         return this;
@@ -685,6 +752,7 @@ public class Person {
      */
     
     public String[] profiles;
+
     public Person withProfiles(String[] profiles) {
         this.profiles = profiles;
         return this;
@@ -695,6 +763,7 @@ public class Person {
      */
     
     public String[] skills;
+
     public Person withSkills(String[] skills) {
         this.skills = skills;
         return this;
@@ -705,6 +774,7 @@ public class Person {
      */
     
     public String[] streetAddresses;
+
     public Person withStreetAddresses(String[] streetAddresses) {
         this.streetAddresses = streetAddresses;
         return this;
@@ -715,6 +785,7 @@ public class Person {
      */
     
     public String summary;
+
     public Person withSummary(String summary) {
         this.summary = summary;
         return this;
@@ -725,6 +796,7 @@ public class Person {
      */
     
     public String twitterUrl;
+
     public Person withTwitterUrl(String twitterUrl) {
         this.twitterUrl = twitterUrl;
         return this;
@@ -735,6 +807,7 @@ public class Person {
      */
     
     public String twitterUsername;
+
     public Person withTwitterUsername(String twitterUsername) {
         this.twitterUsername = twitterUsername;
         return this;
@@ -745,6 +818,7 @@ public class Person {
      */
     
     public String workEmail;
+
     public Person withWorkEmail(String workEmail) {
         this.workEmail = workEmail;
         return this;

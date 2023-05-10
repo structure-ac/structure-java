@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class LoginResponse {
     
     public byte[] body;
+
     public LoginResponse withBody(byte[] body) {
         this.body = body;
         return this;
@@ -17,6 +18,7 @@ public class LoginResponse {
     
     
     public String contentType;
+
     public LoginResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -24,6 +26,7 @@ public class LoginResponse {
     
     
     public Integer statusCode;
+
     public LoginResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -31,6 +34,7 @@ public class LoginResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public LoginResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

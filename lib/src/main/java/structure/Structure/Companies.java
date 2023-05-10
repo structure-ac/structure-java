@@ -31,6 +31,12 @@ public class Companies {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Enrich a company profile
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public structure.Structure.models.operations.EnrichCompanyResponse enrich(structure.Structure.models.operations.EnrichCompanyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.EnrichCompanyRequest.class, baseUrl, "/companies/{id}/enrich", request, null);
@@ -63,6 +69,12 @@ public class Companies {
         return res;
     }
 
+    /**
+     * List company employees
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public structure.Structure.models.operations.ListEmployeesResponse listEmployees(structure.Structure.models.operations.ListEmployeesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.ListEmployeesRequest.class, baseUrl, "/companies/{id}/employees", request, null);
@@ -101,6 +113,12 @@ public class Companies {
         return res;
     }
 
+    /**
+     * List company jobs
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public structure.Structure.models.operations.ListJobsResponse listJobs(structure.Structure.models.operations.ListJobsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(structure.Structure.models.operations.ListJobsRequest.class, baseUrl, "/companies/{id}/jobs", request, null);
@@ -139,6 +157,12 @@ public class Companies {
         return res;
     }
 
+    /**
+     * Search Companies
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public structure.Structure.models.operations.SearchCompaniesResponse search(structure.Structure.models.operations.SearchCompaniesApplicationJSON request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/companies/search");

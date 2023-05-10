@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class MeResponse {
     
     public byte[] body;
+
     public MeResponse withBody(byte[] body) {
         this.body = body;
         return this;
@@ -17,6 +18,7 @@ public class MeResponse {
     
     
     public String contentType;
+
     public MeResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -24,6 +26,7 @@ public class MeResponse {
     
     
     public Integer statusCode;
+
     public MeResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -31,6 +34,7 @@ public class MeResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public MeResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

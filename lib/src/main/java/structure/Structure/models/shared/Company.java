@@ -15,6 +15,7 @@ public class Company {
      */
     
     public String about;
+
     public Company withAbout(String about) {
         this.about = about;
         return this;
@@ -25,6 +26,7 @@ public class Company {
      */
     
     public String[] affiliated;
+
     public Company withAffiliated(String[] affiliated) {
         this.affiliated = affiliated;
         return this;
@@ -35,6 +37,7 @@ public class Company {
      */
     
     public String companySize;
+
     public Company withCompanySize(String companySize) {
         this.companySize = companySize;
         return this;
@@ -45,6 +48,7 @@ public class Company {
      */
     
     public String countryCode;
+
     public Company withCountryCode(String countryCode) {
         this.countryCode = countryCode;
         return this;
@@ -55,6 +59,7 @@ public class Company {
      */
     
     public String[] employees;
+
     public Company withEmployees(String[] employees) {
         this.employees = employees;
         return this;
@@ -65,6 +70,7 @@ public class Company {
      */
     
     public Double employeesInLinkedin;
+
     public Company withEmployeesInLinkedin(Double employeesInLinkedin) {
         this.employeesInLinkedin = employeesInLinkedin;
         return this;
@@ -75,6 +81,7 @@ public class Company {
      */
     
     public Double followers;
+
     public Company withFollowers(Double followers) {
         this.followers = followers;
         return this;
@@ -85,6 +92,7 @@ public class Company {
      */
     
     public Double founded;
+
     public Company withFounded(Double founded) {
         this.founded = founded;
         return this;
@@ -95,6 +103,7 @@ public class Company {
      */
     
     public String funding;
+
     public Company withFunding(String funding) {
         this.funding = funding;
         return this;
@@ -105,6 +114,7 @@ public class Company {
      */
     
     public String headquarters;
+
     public Company withHeadquarters(String headquarters) {
         this.headquarters = headquarters;
         return this;
@@ -115,6 +125,7 @@ public class Company {
      */
     
     public Double id;
+
     public Company withId(Double id) {
         this.id = id;
         return this;
@@ -125,6 +136,7 @@ public class Company {
      */
     
     public String industries;
+
     public Company withIndustries(String industries) {
         this.industries = industries;
         return this;
@@ -135,6 +147,7 @@ public class Company {
      */
     
     public String investors;
+
     public Company withInvestors(String investors) {
         this.investors = investors;
         return this;
@@ -145,6 +158,7 @@ public class Company {
      */
     
     public String[] jobs;
+
     public Company withJobs(String[] jobs) {
         this.jobs = jobs;
         return this;
@@ -155,6 +169,7 @@ public class Company {
      */
     
     public String lid;
+
     public Company withLid(String lid) {
         this.lid = lid;
         return this;
@@ -165,6 +180,7 @@ public class Company {
      */
     
     public String[] locations;
+
     public Company withLocations(String[] locations) {
         this.locations = locations;
         return this;
@@ -175,6 +191,7 @@ public class Company {
      */
     
     public String logo;
+
     public Company withLogo(String logo) {
         this.logo = logo;
         return this;
@@ -185,6 +202,7 @@ public class Company {
      */
     
     public String name;
+
     public Company withName(String name) {
         this.name = name;
         return this;
@@ -195,6 +213,7 @@ public class Company {
      */
     
     public String organizationType;
+
     public Company withOrganizationType(String organizationType) {
         this.organizationType = organizationType;
         return this;
@@ -205,6 +224,7 @@ public class Company {
      */
     
     public String[] profiles;
+
     public Company withProfiles(String[] profiles) {
         this.profiles = profiles;
         return this;
@@ -215,6 +235,7 @@ public class Company {
      */
     
     public String region;
+
     public Company withRegion(String region) {
         this.region = region;
         return this;
@@ -225,6 +246,7 @@ public class Company {
      */
     
     public String[] similar;
+
     public Company withSimilar(String[] similar) {
         this.similar = similar;
         return this;
@@ -235,6 +257,7 @@ public class Company {
      */
     
     public String slogan;
+
     public Company withSlogan(String slogan) {
         this.slogan = slogan;
         return this;
@@ -245,6 +268,7 @@ public class Company {
      */
     
     public String specialities;
+
     public Company withSpecialities(String specialities) {
         this.specialities = specialities;
         return this;
@@ -255,6 +279,7 @@ public class Company {
      */
     
     public String sphere;
+
     public Company withSphere(String sphere) {
         this.sphere = sphere;
         return this;
@@ -265,6 +290,7 @@ public class Company {
      */
     
     public String type;
+
     public Company withType(String type) {
         this.type = type;
         return this;
@@ -275,6 +301,7 @@ public class Company {
      */
     
     public String url;
+
     public Company withUrl(String url) {
         this.url = url;
         return this;
@@ -285,6 +312,7 @@ public class Company {
      */
     
     public String website;
+
     public Company withWebsite(String website) {
         this.website = website;
         return this;

@@ -12,6 +12,7 @@ public class LoginApplicationJSON {
      */
     @JsonProperty("email")
     public String email;
+
     public LoginApplicationJSON withEmail(String email) {
         this.email = email;
         return this;
@@ -22,6 +23,7 @@ public class LoginApplicationJSON {
      */
     @JsonProperty("password")
     public String password;
+
     public LoginApplicationJSON withPassword(String password) {
         this.password = password;
         return this;
