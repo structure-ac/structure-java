@@ -40,8 +40,8 @@ public class SDK {
 	private structure.Structure.models.shared.Security _security;
 	private String _serverUrl;
 	private String _language = "java";
-	private String _sdkVersion = "0.7.2";
-	private String _genVersion = "2.26.2";
+	private String _sdkVersion = "0.7.3";
+	private String _genVersion = "2.26.3";
 	/**
 	 * The Builder class allows the configuration of a new instance of the SDK.
 	 */
