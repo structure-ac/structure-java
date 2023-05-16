@@ -41,7 +41,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'structure'
             artifactId = 'Structure'
-            version = '0.8.0'
+            version = '0.9.0'
 
             from components.java
 
