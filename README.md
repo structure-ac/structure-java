@@ -17,7 +17,7 @@
 ### Gradle
 
 ```groovy
-implementation 'structure.Structure:Structure:0.9.0'
+implementation 'structure.Structure:Structure:0.10.0'
 ```
 <!-- End SDK Installation -->
 
