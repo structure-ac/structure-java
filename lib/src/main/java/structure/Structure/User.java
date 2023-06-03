@@ -14,20 +14,10 @@ import structure.Structure.utils.SerializedBody;
  */
 public class User {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public User(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public User(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -37,7 +27,7 @@ public class User {
      * @throws Exception if the API call fails
      */
     public structure.Structure.models.operations.LoginResponse login(structure.Structure.models.operations.LoginApplicationJSON request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/auths");
         
         HTTPRequest req = new HTTPRequest();
@@ -50,9 +40,9 @@ public class User {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "*/*");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -81,7 +71,7 @@ public class User {
      * @throws Exception if the API call fails
      */
     public structure.Structure.models.operations.MeResponse me() throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = structure.Structure.utils.Utils.generateURL(baseUrl, "/me");
         
         HTTPRequest req = new HTTPRequest();
@@ -89,9 +79,9 @@ public class User {
         req.setURL(url);
 
         req.addHeader("Accept", "*/*");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
