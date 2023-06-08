@@ -33,7 +33,7 @@ public class Accounts {
         req.setURL(url);
 
         req.addHeader("Accept", "*/*");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion, this.sdkConfiguration.openapiDocVersion));
         
         HTTPClient client = this.sdkConfiguration.securityClient;
         

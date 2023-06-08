@@ -28,7 +28,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security("nisi") {{
-                    bearerAuth = "YOUR_BEARER_TOKEN_HERE";
+                    bearerAuth = "";
                 }})
                 .build();
 
@@ -64,7 +64,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security("ab") {{
-                    bearerAuth = "YOUR_BEARER_TOKEN_HERE";
+                    bearerAuth = "";
                 }})
                 .build();
 

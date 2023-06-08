@@ -36,7 +36,7 @@ public class Companies {
         req.setURL(url);
 
         req.addHeader("Accept", "*/*");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion, this.sdkConfiguration.openapiDocVersion));
         
         HTTPClient client = this.sdkConfiguration.securityClient;
         
@@ -76,7 +76,7 @@ public class Companies {
         req.setURL(url);
 
         req.addHeader("Accept", "*/*");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion, this.sdkConfiguration.openapiDocVersion));
         java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.ListEmployeesRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -122,7 +122,7 @@ public class Companies {
         req.setURL(url);
 
         req.addHeader("Accept", "*/*");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion, this.sdkConfiguration.openapiDocVersion));
         java.util.List<NameValuePair> queryParams = structure.Structure.utils.Utils.getQueryParams(structure.Structure.models.operations.ListJobsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -170,7 +170,7 @@ public class Companies {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "*/*");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion, this.sdkConfiguration.openapiDocVersion));
         
         HTTPClient client = this.sdkConfiguration.securityClient;
         

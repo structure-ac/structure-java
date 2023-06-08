@@ -26,7 +26,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security("distinctio") {{
-                    bearerAuth = "YOUR_BEARER_TOKEN_HERE";
+                    bearerAuth = "";
                 }})
                 .build();
 

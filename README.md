@@ -17,7 +17,7 @@
 ### Gradle
 
 ```groovy
-implementation 'structure.Structure:Structure:0.15.1'
+implementation 'structure.Structure:Structure:0.16.0'
 ```
 <!-- End SDK Installation -->
 
@@ -42,7 +42,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security("corrupti") {{
-                    bearerAuth = "YOUR_BEARER_TOKEN_HERE";
+                    bearerAuth = "";
                 }})
                 .build();
 

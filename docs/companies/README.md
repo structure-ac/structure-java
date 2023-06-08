@@ -30,7 +30,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security("quibusdam") {{
-                    bearerAuth = "YOUR_BEARER_TOKEN_HERE";
+                    bearerAuth = "";
                 }})
                 .build();
 
@@ -67,7 +67,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security("nulla") {{
-                    bearerAuth = "YOUR_BEARER_TOKEN_HERE";
+                    bearerAuth = "";
                 }})
                 .build();
 
@@ -107,7 +107,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security("error") {{
-                    bearerAuth = "YOUR_BEARER_TOKEN_HERE";
+                    bearerAuth = "";
                 }})
                 .build();
 
@@ -147,7 +147,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security("magnam") {{
-                    bearerAuth = "YOUR_BEARER_TOKEN_HERE";
+                    bearerAuth = "";
                 }})
                 .build();
 
