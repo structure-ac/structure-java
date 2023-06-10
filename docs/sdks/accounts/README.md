@@ -41,3 +41,9 @@ public class Application {
     }
 }
 ```
+
+
+### Response
+
+**[structure.Structure.models.operations.ListUsersResponse](../../models/operations/ListUsersResponse.md)**
+

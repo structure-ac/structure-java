@@ -46,6 +46,18 @@ public class Application {
 }
 ```
 
+### Parameters
+
+| Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                     | [structure.Structure.models.operations.LoginApplicationJSON](../../models/operations/LoginApplicationJSON.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+
+
+### Response
+
+**[structure.Structure.models.operations.LoginResponse](../../models/operations/LoginResponse.md)**
+
+
 ## me
 
 Show current user
@@ -79,3 +91,9 @@ public class Application {
     }
 }
 ```
+
+
+### Response
+
+**[structure.Structure.models.operations.MeResponse](../../models/operations/MeResponse.md)**
+

@@ -253,3 +253,11 @@ Based on:
 - Speakeasy CLI 1.45.2 (2.37.2) https://github.com/speakeasy-api/speakeasy
 ### Releases
 - [Maven Central v0.16.1] https://central.sonatype.com/artifact/structure/Structure/0.16.1 - .
+
+## 2023-06-10 01:38:51
+### Changes
+Based on:
+- OpenAPI Doc 1.0 https://prod.speakeasyapi.dev/v1/apis/Structure/version/1.0.0/schema/download
+- Speakeasy CLI 1.47.0 (2.39.0) https://github.com/speakeasy-api/speakeasy
+### Releases
+- [Maven Central v0.17.0] https://central.sonatype.com/artifact/structure/Structure/0.17.0 - .
